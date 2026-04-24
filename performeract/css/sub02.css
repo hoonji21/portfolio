@@ -1,0 +1,646 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Italiana&family=Noto+Sans+KR:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bagel+Fat+One&family=Gamja+Flower&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap');
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+body { 
+  font-family: 'Inter', 'Chonburi', 'Italiana', sans-serif; 
+  margin: 0;
+  overflow-x: hidden;
+}
+ul { 
+  list-style: none; 
+}
+a { 
+  text-decoration: none; 
+  color: #000; 
+}
+/* 헤더 전체 컨테이너 */
+.main-header {
+  width: 100%;
+  height: 244px; /* 기존 244px에서 여백 조정 */
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.header-container {
+  width: 100%;
+  max-width: 1440px; /* 1920px 대신 실용적인 최대 너비 사용 */
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 로고 */
+.logo img {
+  width: 250px; /* 원본 337px에서 비율 조정 */
+  height: 180px;
+  display: block;
+  background-color: #FFFFFF;
+}
+/* 메인 메뉴 */
+.main-nav ul {
+  display: flex;
+  gap: 60px; /* Figma의 90px은 너무 넓어 60px로 조정 */
+}
+.main-nav a {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+}
+.main-nav a:hover {
+  color: #666; /* 호버 효과 추가 */
+}
+/* 우측 유틸리티 */
+.header-utils {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+/* 로그인/회원가입 */
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+.divider {
+  width: 1px;
+  height: 12px;
+  background: #ccc;
+}
+/* 검색창 */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #000000;
+  padding: 0 10px 0 15px;
+  background: #fff;
+}
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+}
+.vector-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  /*background: #000; /* 돋보기 아이콘을 이미지/아이콘폰트로 대체 가능 */
+  /*mask: url(../img/main/돋보기.png) no-repeat center; /* SVG 사용 시 */
+}
+.vector-icon img {
+  width: 18px;
+  height: 18px;
+}
+.reservation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 0px 100px;
+  gap: 124px;
+  width: 1920px;
+  min-height: 978px;
+  background: #000000;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.res-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 104px;
+}
+.res-main-title {
+  font-family: 'Chonburi', serif;
+  font-size: 70px;
+  line-height: 84px;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  text-align: center;
+  margin-left: 5%;
+}
+.res-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px 0px 374px;
+  gap: 130px;
+  width: 100%;
+  /*border: 1px solid #fff;*/
+}
+.res-section-labele {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 368px;
+  height: 48px;
+  margin-left: 5%;
+  background: rgba(44, 134, 230, 0.68);
+  /*border: 1px solid #fff;*/
+}
+.res-label-text {
+  font-family: 'Italiana', 'inter';
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+.res-discount-list {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+  width: 1546px;
+  height: auto;
+}
+.res-discount-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 5%;
+  gap: 61px;
+  height: auto;
+  /*border: 1px solid #fff;*/
+  
+}
+.res-discount-item.align-top {
+  align-items: flex-start;
+}
+.res-category-box {
+  width: 254px;
+  display: flex;
+  align-items: center;
+}
+.category-name {
+  font-family: 'Italiana', 'inter';
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.res-info-box {
+  width: 674px;
+  height: auto;
+  display: block;
+  /*border: 1px solid #fff;*/
+}
+.info-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+.info-note {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.reservaion-law-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 81px 0px 75px;
+  gap: 124px;
+  width: 1920px;
+  min-height: 754px;
+  background: #000000;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.res-law-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px 0px 374px;
+  gap: 112px;
+  width: 100%;
+}
+.res-law-list {
+  display: flex;
+  flex-direction: column;
+  gap: 77px;
+  width: 1546px;
+}
+.res-law-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 61px;
+}
+.res-law-item.align-top {
+  align-items: flex-start;
+}
+.res-category-box.wide {
+  width: 200px;
+  flex: none;
+  /*border: 1px solid #fff;*/
+  margin-left: 5%;
+}
+.category-name {
+  font-family: 'Italiana', 'Inter';
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.res-info-box {
+  width: auto;
+  max-width: 600px;
+  /*border: 1px solid #fff;*/
+}
+.info-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  word-break: keep-all;
+}
+.reservation-refund-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 0px 82px;
+  gap: 124px;
+  width: 1920px;
+  min-height: 1045px;
+  background: #000000;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.res-refund-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px 0px 374px;
+  gap: 130px;
+  width: 100%;
+  max-width: 1850px;
+  margin-left: 3%;
+  /*border: 1px solid #fff;*/
+}
+.res-section-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 368px;
+  height: 49px;
+  background: rgba(44, 134, 230, 0.68);
+  flex: none;
+  /*border: 1px solid #fff;*/
+  margin-left: 1%;
+}
+.res-label-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+.res-refund-list {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+  width: 1546px;
+}
+.res-refund-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 61px;
+}
+.res-refund-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 61px;
+  width: 989px;
+  /*border: 1px solid #fff;*/
+}
+.res-refund-item.align-top {
+  align-items: flex-start;
+}
+.res-category-box {
+  width: 150px;
+  flex: none;
+  padding-top: 10px;
+}
+.category-name {
+  font-family: 'Italiana', 'inter';
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.res-info-box {
+  flex: 1;
+  max-width: 800px;
+}
+.info-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  word-break: keep-all;
+}
+.reservation-detail-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 81px 0px 101px;
+  gap: 124px;
+  width: 1920px;
+  min-height: 935px;
+  background: #000000;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.res-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0px 0px 374px;
+  gap: 112px;
+  width: 100%;
+  height: 722px;
+  /*border: 1px solid #fff;*/
+}
+.res-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 77px;
+  width: 1546px;
+  height: 684px;
+  /*border: 1px solid #fff;*/
+}
+.res-detail-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 61px;
+  width: 956px;
+  height: auto;
+  margin-left: 3%;
+  /*border: 1px solid #fff;*/
+}
+.res-info-box {
+  flex: 1;
+  max-width: 800px;
+  height: auto;
+}
+.pa-pass-section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 82px;
+  gap: 124px;
+  width: 1920px;
+  min-height: 945px;
+  background: #000000;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.pa-pass-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0px 0px 374px;
+  gap: 109px;
+  /*border: 1px solid #fff;*/
+}
+.pa-section-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 368px;
+  height: 49px;
+  background: rgba(44, 134, 230, 0.68);
+  margin-left: 5%;
+}
+.pa-label-text {
+  font-family: 'Chounburi';
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+.pa-pass-list {
+  display: flex;
+  flex-direction: column;
+  gap: 117px;
+  width: 1171px;
+  /*border: 1px solid #fff;*/
+  margin-left: 1.5%;
+}
+.pa-pass-item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 61px;
+  width: 1171px;
+  margin-left: 5%;
+  /*border: 1px solid #fff;*/
+  /*margin-bottom: 80px;*/
+}
+.pa-category-box {
+  width: 250px;
+  flex: none;
+}
+.category-name-pa {
+  font-family: 'Chonburi';
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.pa-info-box {
+  flex: 1;
+  max-width: 700px;
+}
+.pa-info-text, .pa-info-list {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 170%;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pa-info-list li {
+  margin-bottom: 20px;
+}
+.pa-info-list strong {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.res-guide-section {
+  display: flex;
+  flex-direction: column;
+  padding: 81px 0px 101px;
+  width: 1920px;
+  min-height: 1006px;
+  background: #000000;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.res-guide-container {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 0px 0px 374px;
+  gap: 84px;
+  /*border: 1px solid #fff;*/
+}
+.res-guide-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 368px;
+  height: 48px;
+  background: rgba(44, 134, 230, 0.68);
+  margin-left: 5%;
+}
+.label-text {
+  font-family: 'Italiana';
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.res-guide-list {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+  width: 988px;
+  margin-left: 5%;
+  /*border: 1px solid #fff;*/
+}
+.res-guide-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px;
+}
+.res-guide-cat {
+  width: 200px;
+  flex-shrink: 0;
+}
+.cat-name {
+  font-family: 'Chonburi';
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.res-guide-info {
+  flex: 1;
+  max-width: 600px;
+}
+.guide-text {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 170%;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  word-break: keep-all;
+}
+.pa-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 74px 0px 50px 0px;
+  gap: 101px 333px;
+  width: 1920px;
+  min-height: 510px;
+  background: #474646;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.footer-top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 50px;
+  gap: 46px;
+  width: 100%;
+}
+.footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 30px;
+  background: #474646;
+  border: 1px solid #BE8989;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR';
+  font-size: 14px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer-btn:hover {
+  background: #F8753D;
+  color: #474646;
+}
+.footer-bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+.footer-info-box {
+  width: 857px;
+  padding: 10px 0px 20px 50px;
+}
+.footer-info-text {
+  font-family: 'Noto Sans KR';
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  margin: 0;
+}
+.footer-logo-img {
+  width: 536px;
+  height: 153px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo-box {
+  width: 488px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-logo-img img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  display: block;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

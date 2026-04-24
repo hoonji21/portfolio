@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup페이지</title>
+  <link rel="stylesheet" href="../css/signup.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/jejugothic.css">
+</head>
+<body>
+  <header class="join-header">
+    <div class="header-top-bar"></div>
+
+    <div class="header-content-area">
+      <div class="header-inner">
+        <div class="join-logo">
+          <a href="../html/main.html">
+            <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+          </a>
+        </div>
+
+        <nav class="join-nav">
+          <ul>
+            <li><a href="../html/sub1(shoe).html">축구화</a></li>
+            <li><a href="#">의류</a></li>
+            <li><a href="#">용품</a></li>
+            <li><a href="../html/sub4(cus).html">고객센터</a></li>
+          </ul>
+        </nav>
+
+        <div class="join-utility">
+          <div class="auth-links">
+           <a href="../html/login.html">로그인</a>
+           <span class="divider">|</span>
+           <a href="../html/signup.html">회원가입</a>
+          </div>
+
+          <div class="icon-row">
+           <div class="search-unit">
+             <button class="icon-btn" id="searchTrigger">
+               <img src="../img/main/돋보기.png" alt="검색">
+             </button>
+             <input type="search" class="search-expand-input" id="searchField" placeholder="검색어를 입력하세요">
+           </div>
+
+           <button class="icon-btn">
+             <img src="../img/main/인간.png" alt="마이페이지">
+           </button>
+
+           <button class="icon-btn">
+             <img src="../img/main/장바구니.png" alt="장바구니">
+           </button>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+    <div class="header-bottom-bar"></div>
+  </header>
+
+  <main class="join-main-container">
+    <div class="join-title-area">
+      <h2 class="join-title">회원가입</h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="join-form-area">
+      <div class="form-group flex-group">
+        <div class="input-box">
+          <label for="userId">아이디 <span class="dot">*</span></label>
+          <input type="text" id="userId" placeholder="아이디">
+        </div>
+        <button type="button" class="btn-check">중복확인</button>
+      </div>
+
+      <div class="form-group">
+        <label for="userPw">비밀번호 <span class="dot">*</span></label>
+        <input type="password" id="userPw" placeholder="비밀번호 (영문, 숫자, 특수문자 8~20자)">
+      </div>
+
+      <div class="form-group">
+        <label for="userPwConfirm">비밀번호 재입력 <span class="dot">*</span></label>
+        <input type="password" id="userPwConfirm" placeholder="비밀번호 재입력">
+      </div>
+
+      <div class="form-group">
+        <label for="userName">이름 <span class="dot">*</span></label>
+        <input type="text" id="userName" placeholder="이름">
+      </div>
+
+      <div class="form-group email-group-wrapper">
+        <label for="userEmail">이메일 주소 <span class="dot">*</span></label>
+        <div class="email-input-row">
+          <input type="text" id="userEmail" class="email-id" placeholder="이메일">
+          <span class="email-at">@</span>
+          <div class="email-domain-box">
+            <select id="emailDomain" class="email-domain-select">
+              <option value="direct">직접입력</option>
+              <option value="naver.com">naver.com</option>
+              <option value="gmail.com">gmail.com</option>
+              <option value="hanmail.com">hanmail.com</option>
+              <option value="daum.net">daum.net</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="agree-check-row">
+          <label for="agreeEmail" class="agree-label">이메일 수신동의</label>
+          <input type="checkbox" id="agreeEmail" class="receive-check">
+        </div>
+      </div>
+
+      <div class="form-group phone-group-wrapper">
+        <label for="userPhone">휴대폰 번호 <span class="dot">*</span></label>
+        <input type="text" id="userPhone" placeholder="휴대폰 번호-없이 입력">
+
+        <div class="agree-check-row sms-check">
+          <label for="agreeSms" class="agree-label">SMS 수신동의</label>
+          <input type="checkbox" id="agreeSms" class="receive-check">
+        </div>
+      </div>
+
+      <div class="form-group address-group-wrapper">
+        <label>주소 <span class="dot">*</span></label>
+        <div class="address-row">
+          <input type="text" class="post-code" placeholder="우편번호">
+          <button type="button" class="btn-post-search">우편번호 찾기</button>
+        </div>
+        <input type="text" class="address-detail" placeholder="상세주소 입력">
+      </div>
+
+      <div class="form-group birth-group-wrapper">
+        <label>생년월일 <span class="dot">*</span></label>
+
+        <div class="birth-row">
+          <div class="select-box birth-year">
+            <select>
+              <option value="">년도</option>
+            </select>
+            <span class="select-arrow">▼</span>
+          </div>
+
+          <div class="select-box birht-month">
+            <select>
+              <option value="">월</option>
+            </select>
+            <span class="select-arrow">▼</span>
+          </div>
+
+          <div class="select-box birth-day">
+            <select>
+              <option value="">일</option>
+            </select>
+            <span class="select-arrow">▼</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="terms-container">
+        <label class="terms-title">약관동의</label>
+        <div class="all-agree-box">
+          <label class="agree-item all-agree">
+            <input type="checkbox" id="check-all" class="custom-checkbox term-check">
+            <span>아래 약관에 모두 동의 합니다.</span>
+          </label>
+        </div>
+
+        <div class="terms-list">
+          <div class="terms-item">
+            <label class="agree-item">
+              <input type="checkbox" class="custom-checkbox term-check">
+              <span>[필수] 만 14세 이상입니다.</span>
+            </label>
+            <a href="#" class="btn-view">보기</a>
+          </div>
+
+          <div class="terms-item">
+            <label class="agree-item">
+              <input type="checkbox" class="custom-checkbox term-check">
+              <span>[필수] 이용약관</span>
+            </label>
+            <a href="#" class="btn-view">보기</a>
+          </div>
+
+          <div class="terms-item">
+            <label class="agree-item">
+              <input type="checkbox" class="custom-checkbox term-check">
+              <span>[필수] 개인정보 수집 / 이용</span>
+            </label>
+            <a href="#" class="btn-view">보기</a>
+          </div>
+
+          <div class="terms-item">
+            <label class="agree-item">
+              <input type="checkbox" class="custom-checkbox term-check">
+              <span>[선택] 마케팅 목적의 개인정보 수집 및 이용동의</span>
+            </label>
+            <a href="#" class="btn-view">보기</a>
+          </div>
+
+          <div class="terms-item">
+            <label class="agree-item">
+              <input type="checkbox" class="custom-checkbox term-check">
+              <span>[선택] 광고성 정보 수신동의</span>
+            </label>
+            <a href="#" class="btn-view">보기</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="form-notice">
+        -주문, 결제, 고객 상담 등 원활한 정보 제공을 위해 이메일 주소 및 휴대폰 번호는 정확히 기입 하셔야 합니다.
+      </p>
+
+      <div class="submit-area">
+        <button type="submit" class="btn-join-submit">회원가입</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-container">
+    <div class="footer-top-line"></div>
+
+    <div class="footer-content">
+      <div class="info-area">
+        <div class="policy-bank-row">
+          <a href="#">이용약관</a>
+          <a href="#">개인정보처리방침</a>
+          <span>BANK INFO 국민:123456-12-123456</span>
+        </div>
+
+        <div class="company-detail">
+          <div class="detail-row">
+            <span>회사명 : 싸커누리</span>
+            <span>대표자 : 000</span>
+            <span>사업자 등록번호 : 126-19-28317</span>
+          </div>
+          <div class="detail-row">
+            <span>대표번호 : 02-2236-3456</span>
+            <span>[평일: 09:00~18:00 / 주말, 공휴일 휴무]</span>
+            <span>E-mail : sai7980@naver.com</span>
+          </div>
+          <div class="detail-row">
+            <span>통신판매업 번호 : 제 2009-서울송파-0675호</span>
+            <span>주소 : 서울특별시 중랑구 면목동 192-115</span>
+          </div>
+          <div class="copyright">
+            Copyright 2009ⓒsoccerlove Go.,Ltd. All right Reserved.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo">
+        <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+      </div>
+    </div>
+    <div class="footer-bottom-line"></div>
+  </footer>
+
+  <script>
+   document.addEventListener('DOMContentLoaded', () => { //코드 다 읽었으면 실행하기
+  const trigger = document.getElementById('searchTrigger');//아이디 명 찾아서 저장
+  const field = document.getElementById('searchField'); //검색창 아이디 명 찾아서 저장
+
+  if (trigger && field) { //두 아이디가 다 있으면 다음으로 넘어가기
+    trigger.addEventListener('click', (e) => { //트리거 아이디(돋보기) 클릭하면 실행
+      e.stopPropagation(); //★ 클릭 이벤트가 부모요소나 문서 전체로 퍼지지 않게 막는다.★
+      field.classList.toggle('active'); //검색창에 액티브 클래스 있으면 빼고 없으면 넣는다.
+      if (field.classList.contains('active')) { //만약 액티브 클래스가 드가서 화면에 있다면
+        field.focus();// 바로 검색할수 있게 검색창 안 커서를 깜빡깜빡하게 해준다.
+      }
+    });
+
+    document.addEventListener('click', (e) => { // 어디든 클릭하면 실행하기
+      if (!field.contains(e.target) && !trigger.contains(e.target)) { //만약 클릭한데가 검색창 안에도 아니고 돋보기도 아니면
+        field.classList.remove('active'); //검색창에서 액티브 클래스를 없애서 숨긴다
+      }
+    });
+  }
+ }); 
+  </script>
+
+  <script>
+    const checkAll = document.getElementById('check-all'); //아이디 값 찾아서 변수 저장해서 실행
+    const termChecks = document.querySelectorAll('.term-check:not(#check-all)'); //()안에 클래스를 리스트 형태로 가져와서 저장
+
+    checkAll.addEventListener('change', (e) => {
+      const isChecked = e.target.checked; //전체 동의 체크 박스가 변할 때 실행하자
+      termChecks.forEach(check => { //개별 체크박스 리스트들 하나씩 순회하면서 확인
+        check.checked = e.target.checked; // 현재 개별 박스 체크 상태를 방금 클릭한 전체 동의 박스 체크 상태와 똑같이 하기
+      });
+    });
+  </script>
+</body>
+</html>

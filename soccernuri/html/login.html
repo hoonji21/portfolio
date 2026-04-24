@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login페이지</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/jejugothic.css">
+</head>
+<body>
+  <header class="login-header">
+    <div class="header-top-bar"></div>
+
+    <div class="header-content-area">
+      <div class="header-inner">
+        <div class="login-logo">
+          <a href="../html/main.html">
+            <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+          </a>
+        </div>
+
+        <nav class="login-nav">
+          <ul>
+            <li><a href="../html/sub1(shoe).html">축구화</a></li>
+            <li><a href="../html/sub2(clo).html">의류</a></li>
+            <li><a href="../html/sub3(pro).html">용품</a></li>
+            <li><a href="../html/sub4(cus).html">고객센터</a></li>
+          </ul>
+        </nav>
+
+        <div class="login-utility">
+          <div class="auth-links">
+           <a href="../html/login.html">로그인</a>
+           <span class="divider">|</span>
+           <a href="../html/signup.html">회원가입</a>
+          </div>
+
+          <div class="icon-row">
+           <div class="search-unit">
+             <button class="icon-btn" id="searchTrigger">
+               <img src="../img/main/돋보기.png" alt="검색">
+             </button>
+             <input type="search" class="search-expand-input" id="searchField" placeholder="검색어를 입력하세요">
+           </div>
+
+           <button class="icon-btn">
+             <img src="../img/main/인간.png" alt="마이페이지">
+           </button>
+
+           <button class="icon-btn">
+             <img src="../img/main/장바구니.png" alt="장바구니">
+           </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom-bar"></div>
+  </header>
+
+  <main class="login-container">
+    <section class="login-inner">
+      <div class="login-header">
+        <div class="login-logoo">
+          <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+        </div>
+        <h2 class="login-title">회원 로그인</h2>
+      </div>
+
+      <form class="login-form">
+        <div class="input-group">
+          <input type="text" id="userId" placeholder="아이디" class="login-input shadow-box">
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="userPw" placeholder="비밀번호" class="login-input white-box">
+        </div>
+
+        <div class="login-options">
+          <label class="save-id">
+            <input type="checkbox" id="saveId" class="custom-checkbox">
+            <span>아이디 저장</span>
+          </label>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn-login main-btn">로그인</button>
+
+          <button type="button" class="btn-signup secondary-btn" onclick="location.href='signup.html'">회원가입</button>
+        </div>
+
+        <div class="find-account-row">
+          <div class="find-item">
+            <a href="#">아이디 찾기</a>
+          </div>
+
+          <div class="find-item">
+            <a href="#">비밀번호 찾기</a>
+          </div>
+        </div>
+
+        <button type="button" class="btn-non-member tertiary-btn">비회원 주문 조회</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-line-top"></div>
+
+    <div class="footer-content">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <div class="info-top-row">
+            <a href="#" class="footer-link">이용약관</a>
+            <a href="#" class="footer-link">개인정보처리방침</a>
+            <span class="bank-text">BANK INFO 국민 : 123456-12-123456</span>
+          </div>
+
+          <div class="info-details">
+            <div class="detail-row">
+              <span>회사명 : 싸커누리</span>
+              <span>대표자 : OOO</span>
+              <span>사업자 등록번호 : 126-19-28317</span>
+            </div>
+
+            <div class="detail-row">
+              <span>대표번호 : 02-2236-3456</span>
+              <span>[평일: 09:00~18:00 / 주말, 공휴일 휴무]</span>
+              <span>E-mail : sai7980@naver.com</span>
+            </div>
+
+            <div class="detail-row">
+              <span>통신판매업 번호 : 제 2009-서울송파-0675호</span>
+              <span>주소 : 서울특별시 중랑구 면목동 192-115</span>
+            </div>
+
+            <p class="copyright">Copyright 2009ⓒsoccerlove Go.Ltd. All right Reserved.</p>
+          </div>
+        </div>
+
+        <div class="footer-logo">
+          <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-line-bottom"></div>
+  </footer>
+
+  <script>
+   document.addEventListener('DOMContentLoaded', () => { //코드 다 읽었으면 실행하기
+  const trigger = document.getElementById('searchTrigger');//아이디 명 찾아서 저장
+  const field = document.getElementById('searchField'); //검색창 아이디 명 찾아서 저장
+
+  if (trigger && field) { //두 아이디가 다 있으면 다음으로 넘어가기
+    trigger.addEventListener('click', (e) => { //트리거 아이디(돋보기) 클릭하면 실행
+      e.stopPropagation(); //★ 클릭 이벤트가 부모요소나 문서 전체로 퍼지지 않게 막는다.★
+      field.classList.toggle('active'); //검색창에 액티브 클래스 있으면 빼고 없으면 넣는다.
+      if (field.classList.contains('active')) { //만약 액티브 클래스가 드가서 화면에 있다면
+        field.focus();// 바로 검색할수 있게 검색창 안 커서를 깜빡깜빡하게 해준다.
+      }
+    });
+
+    document.addEventListener('click', (e) => { // 어디든 클릭하면 실행하기
+      if (!field.contains(e.target) && !trigger.contains(e.target)) { //만약 클릭한데가 검색창 안에도 아니고 돋보기도 아니면
+        field.classList.remove('active'); //검색창에서 액티브 클래스를 없애서 숨긴다
+      }
+    });
+  }
+ }); 
+  </script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Italiana&family=Noto+Sans+KR:wght@400&display=swap');
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+body { 
+  font-family: 'Inter', sans-serif; 
+  margin: 0;
+  overflow-x: hidden;
+}
+ul { 
+  list-style: none; 
+}
+a { 
+  text-decoration: none; 
+  color: #000; 
+}
+/* 헤더 전체 컨테이너 */
+.main-header {
+  width: 100%;
+  height: 244px; /* 기존 244px에서 여백 조정 */
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.header-container {
+  width: 100%;
+  max-width: 1440px; /* 1920px 대신 실용적인 최대 너비 사용 */
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 로고 */
+.logo img {
+  width: 250px; /* 원본 337px에서 비율 조정 */
+  height: 180px;
+  display: block;
+  background-color: #FFFFFF;
+}
+/* 메인 메뉴 */
+.main-nav ul {
+  display: flex;
+  gap: 60px; /* Figma의 90px은 너무 넓어 60px로 조정 */
+}
+.main-nav a {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+}
+.main-nav a:hover {
+  color: #666; /* 호버 효과 추가 */
+}
+/* 우측 유틸리티 */
+.header-utils {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+/* 로그인/회원가입 */
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+.divider {
+  width: 1px;
+  height: 12px;
+  background: #ccc;
+}
+/* 검색창 */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #000000;
+  padding: 0 10px 0 15px;
+  background: #fff;
+}
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+}
+.vector-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  /*background: #000; /* 돋보기 아이콘을 이미지/아이콘폰트로 대체 가능 */
+  /*mask: url('search-icon.svg') no-repeat center; /* SVG 사용 시 */
+}
+.vector-icon img {
+  width: 18px;
+  height: 18px;
+}
+.member-service-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 25px;
+  gap: 65px;
+  width: 100%;
+  max-width: 1920px;
+  height: 811px;
+  background: #000000;
+  margin: 0 auto;
+}
+.member-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+.service-title {
+  font-family: 'Chonburi';
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.8);
+}
+.login-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 53px 0px 0px;
+  gap: 27px;
+  width: 488px;
+  height: 552px;
+  border: 1px solid #EDE7E7;
+  border-radius: 30px;
+}
+.lock-icon-box {
+  width: 73.33px;
+  height: 70.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 12px;
+  gap: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.lock-icon {
+  width: 49.33px;
+  height: 64.75px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /*background: #373636;*/
+}
+.login-subtitle-box {
+  width: 445px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-text {
+  font-family: 'Italiana';
+  font-size: 30px;
+  color: #E3E1E1;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.input-field {
+  box-sizing: border-box;
+  width: 399px;
+  height: 50px;
+  border: 1px solid #4c4a4a;
+  border-radius: 100px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+}
+.input-field input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "Italiana";
+  font-size: 14px;
+  color: #cacaca;
+}
+.input-field input::placeholder {
+  color: #cacaca;
+}
+.login-submit-btn {
+  width: 399px;
+  height: 50px;
+  background: rgba(83, 67, 53, 0.58);
+  border: 1px solid #DDDDDD;
+  border-radius: 100px;
+  font-family: 'Italiana';
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #cacaca;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.login-submit-btn:hover {
+  background: rgba(83, 67, 53, 0.8);
+  color: #FFFFFF;
+}
+.login-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin-top: 10px;
+}
+.link-item {
+  font-family: "Italiana";
+  font-size: 12px;
+  text-decoration: none;
+  color: #cacaca;
+  transition: color 0.3s;
+}
+.link-item:hover {
+  color: #f8753d;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.find-card {
+  position: relative;
+  width: 488px;
+  padding: 60px 40px;
+  background: #000;
+  border: 1px solid #EDE7E7;
+  border-radius: 30px;
+  text-align: center;
+}
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+.find-title {
+  font-family: 'Italiana';
+  font-size: 28px;
+  color: #E3E1E1;
+  margin-bottom: 10px;
+}
+.find-desc {
+  font-family: 'Noto Sans KR';
+  font-size: 13px;
+  color: #CACACA;
+  margin-bottom: 35px;
+}
+.find-input-field {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #4c4a4a;
+  border-radius: 100px;
+  margin-bottom: 15px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+}
+.find-input-field input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: 'Italiana';
+}
+.find-submit-btn {
+  width: 100%;
+  height: 50px;
+  background: rgba(83, 67, 53, 0.58);
+  border: 1px solid #DDDDDD;
+  border-radius: 100px;
+  color: #CACACA;
+  font-family: 'Italiana';
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.find-submit-btn:hover {
+  background: rgba(83, 67, 53, 0.8);
+  color: #fff;
+}

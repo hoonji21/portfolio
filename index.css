@@ -1,0 +1,641 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/earlyaccess/jejugothic.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background: #F8F8F8;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+.section-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 253px 0px 55px;
+  gap: 10px;
+  width: 100%;
+  max-width: 1920px;
+  height: 2060px;
+  background: #171717;
+  box-sizing: border-box;
+}
+.frame-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+  width: 100%;
+  height: 1807px;
+  align-self: stretch;
+}
+.frame-title-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px 31px 0px 0px;
+  gap: 113px;
+  width: 100%;
+  height: 596px;
+  align-self: stretch;
+}
+.frame-main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1889px;
+  height: 192px;
+  align-self: stretch;
+}
+.main-title {
+  width: 100%;
+  max-width: 1336px;
+  height: 192px;
+  font-family: 'Bacasime Antique';
+  font-size: 126px;
+  line-height: 136px;
+  text-align: center;
+  color: #D4D4D4;
+  margin: 0;
+}
+.frame-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 71px;
+  width: 100%;
+  max-width: 279px;
+  height: 291px;
+}
+.frame-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 54px;
+}
+.user-name {
+  width: auto;
+  white-space: nowrap;
+  font-family: 'Inter';
+  font-size: 45px;
+  line-height: 54px;
+  text-align: right;
+  text-decoration: underline;
+  color: #D4D4D4;
+  margin: 0;
+}
+.frame-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.frame-nav a {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 19px;
+  color: #D4D4D4;
+  text-decoration: none;
+}
+.frame-nav a:hover {
+  text-decoration: underline;
+}
+.frame-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 77px;
+  width: 100%;
+  height: 1144px;
+  align-self: stretch;
+}
+.frame-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 78px 0px 145px;
+  gap: 188px;
+  width: 100%;
+  max-width: 1436px;
+  height: 775px;
+}
+.img-circle {
+  width: 100%;
+  max-width: 312px;
+  height: 471px;
+  border-radius: 156px;
+}
+.img-circle img {
+  width: 312px;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 156px;
+  box-shadow: 2px -5px 15px #D0D0D0;
+}
+.frame-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 130px;
+  width: 100%;
+  max-width: 778px;
+  height: 328px;
+}
+.slogan-title {
+  font-family: 'JejuMyeongjo';
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  color: #E3E3E3;
+  margin: 0;
+}
+.slogan-desc {
+  font-family: 'Inter';
+  font-size: 36px;
+  line-height: 75px;
+  letter-spacing: 0.02em;
+  color: #E3E3E3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+.red-line {
+  width: 100%;
+  height: 0px;
+  border: 1px solid #FF8181;
+  align-self: stretch;
+}
+.frame-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 282px;
+  width: 100%;
+  max-width: 1358px;
+  height: 157px;
+}
+.detail-box {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 26px;
+  color: #D0D0D0;
+}
+.detail-box.contact-info {
+  font-size: 16px;
+  line-height: 35px;
+  margin-left: 75px;
+}
+.stack-group {
+  margin-bottom: 17px;
+}
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+.icon-row {
+  display: flex;
+  align-items: center;
+}
+.icon-row img {
+  width: 100%;
+  max-width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+.edu-text {
+  font-size: 13px;
+  line-height: 30px;
+  width: 100%;
+  max-width: 314px;
+  margin: 0;
+}
+.section-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 99px 0px 0px; 
+  gap: 142px; 
+  width: 100%;
+  max-width: 1920px;
+  height: 1032px;
+  background: #DAD5D6;
+  box-sizing: border-box;
+}
+.brand-visual {
+  width: 100%;
+  max-width: 1257px;
+  height: 941px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.brand-main-img {
+  width: 100%;
+  max-width: 1257px;
+  height: 950px;
+  object-fit: cover;
+}
+.brand-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 61px;
+  width: 100%;
+  max-width: 422px;
+  height: 599px;
+}
+.brand-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 61px;
+  width: 100%;
+  max-width: 422px;
+}
+.brand-label {
+  font-family: 'JejuGothic';
+  font-size: 28px;
+  line-height: 30px;
+  color: #6C6C6C;
+}
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 47px;
+  width: 100%;
+  max-width: 422px;
+}
+.brand-name {
+  font-family: 'jejugothic';
+  font-size: 32px;
+  line-height: 35px;
+  color: #262626;
+  text-align: center;
+}
+.brand-slogan {
+  font-family: 'jejugothic';
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
+}
+.brand-summary {
+  font-family: 'jejugothic';
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+.brand-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 53px;
+  width: 100%;
+  max-width: 360px;
+}
+.brand-description {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  width: 100%;
+  max-width: 360px;
+}
+.desc-text {
+  font-family: 'jejugothic';
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+}
+.project-period {
+  font-family: 'jejugothic';
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
+}
+.brand-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 115px;
+  height: 50px;
+  border-radius: 25px;
+  font-family: 'jejugothic';
+  font-size: 16px;
+  text-decoration: none;
+}
+.btn-plan {
+  background: #00305E;
+  border: 1px solid #FDFDFD;
+  color: #FAFAFA;
+}
+.btn-plan:hover {
+  text-decoration: underline;
+}
+.btn-web {
+  background: #E3DEDE;
+  border: 1px solid #000000;
+  color: #000000;
+}
+.btn-web:hover {
+  text-decoration: underline;
+}
+.section-renewal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 133px 10% 83px 10%;
+  gap: 20%;
+  width: 100%;
+  max-width: 1920px;
+  max-height: 1032px;
+  background: #DAD5D6;
+  box-sizing: border-box;
+}
+.renewal-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 68px;
+  width: 100%;
+  max-width: 450px;
+  height: 585px;
+}
+.renewal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 90px;
+  width: 100%;
+  max-width: 413px;
+  height: 260px;
+}
+.renewal-label {
+  width: 100%;
+  max-width: 413px;
+  height: 30px;
+  font-family: 'JejuGothic';
+  font-size: 28px;
+  line-height: 30px;
+  color: #6C6C6C;
+}
+.renewal-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+  width: 100%;
+  max-width: 413px;
+  height: 140px;
+}
+.renewal-name {
+  width: 100%;
+  max-width: 413px;
+  height: 30px;
+  font-family: 'JejuGothic';
+  font-size: 32px;
+  line-height: 30px;
+  text-align: center;
+  color: #262626;
+}
+.renewal-summary {
+  width: 100%;
+  max-width: 413px;
+  height: 20px;
+  font-family: 'JejuGothic';
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+.renewal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 67px;
+  width: 100%;
+  max-width: 380px;
+  height: 267px;
+}
+.renewal-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 55px;
+  width: 100%;
+  max-width: 380px;
+  height: 150px;
+}
+.desc-main {
+  width: 100%;
+  max-width: 380px;
+  height: 34px;
+  font-family: 'JejuGothic';
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+.desc-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 27px;
+  width: 100%;
+  max-width: 156px;
+  height: 61px;
+}
+.desc-sub p {
+  width: 100%;
+  max-width: 156px;
+  height: 17px;
+  font-family: 'JejuGothic';
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
+}
+.renewal-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 115px;
+  height: 50px;
+  border-radius: 25px;
+  font-family: 'JejuGothic';
+  font-size: 16px;
+  text-decoration: none;
+}
+.btn-plan-blue {
+  background: #00305E;
+  border: 1px solid #FDFDFD;
+  color: #FAFAFA;
+}
+.btn-plan-blue:hover {
+  text-decoration: underline;
+}
+.btn-web-gray {
+  background: #E3DEDE;
+  border: 1px solid #000000;
+  color: #000000;
+}
+.btn-web-gray:hover {
+  text-decoration: underline;
+}
+.project-img-display {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  height: 816px;
+  flex: none;
+}
+.renewal-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+.section-closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 347px 0px 278px;
+  gap: 243px;
+  width: 100%;
+  max-width: 1920px;
+  height: 1032px;
+  background: #D9D9D9;
+  box-sizing: border-box;
+  flex: none;
+  order: 4;
+}
+.closing-message-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 55px;
+  width: 100%;
+  max-width: 1317px;
+  height: 167px;
+}
+.closing-label {
+  width: 100%;
+  max-width: 1317px;
+  height: 22px;
+  font-family: 'JejuGothic';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+.closing-text {
+  width: 100%;
+  max-width: 1317px;
+  height: 90px;
+  font-family: 'JejuGothic';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  color: #000000;
+}
+.closing-info-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 113px; 
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+}
+.accent-line {
+  width: 100%;
+  max-width: 1920px;
+  height: 0px;
+  border: 2px solid #FF8181;
+  align-self: stretch;
+}
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 282px; 
+  width: 100%;
+  max-width: 1358px;
+  height: 88px;
+  /*margin-bottom: 10px;*/
+  /*border: 1px solid #000000;*/
+}
+.detail-box1 {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 16px;
+  color: #171717;
+}
+.detail-box1.contact-info1 {
+  font-size: 16px;
+  line-height: 35px;
+  margin-left: 75px;
+}
+.stack-group1 {
+  margin-bottom: 17px;
+}
+.label1 {
+  display: block;
+  margin-bottom: 10px;
+}
+.icon-row1 {
+  display: flex;
+  align-items: center;
+}
+.icon-row1 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+.edu-text1 {
+  font-size: 13px;
+  line-height: 30px;
+  width: 100%;
+  max-width: 314px;
+  margin: 0;
+}

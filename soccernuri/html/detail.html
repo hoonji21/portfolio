@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail페이지</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/jejugothic.css">
+</head>
+<body>
+    <header class="detail-header">
+    <div class="header-top-bar"></div>
+
+    <div class="header-content-area">
+      <div class="header-inner">
+        <div class="detail-logo">
+          <a href="../html/main.html">
+            <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+          </a>
+        </div>
+
+        <nav class="detail-nav">
+          <ul>
+            <li><a href="../html/sub1(shoe).html">축구화</a></li>
+            <li><a href="../html/sub2(clo).html">의류</a></li>
+            <li><a href="../html/sub3(pro).html">용품</a></li>
+            <li><a href="../html/sub4(cus).html">고객센터</a></li>
+          </ul>
+        </nav>
+
+        <div class="detail-utility">
+          <div class="auth-links">
+           <a href="../html/login.html">로그인</a>
+           <span class="divider">|</span>
+           <a href="../html/signup.html">회원가입</a>
+          </div>
+
+          <div class="icon-row">
+           <div class="search-unit">
+             <button class="icon-btn" id="searchTrigger">
+               <img src="../img/main/돋보기.png" alt="검색">
+             </button>
+             <input type="search" class="search-expand-input" id="searchField" placeholder="검색어를 입력하세요">
+           </div>
+
+           <button class="icon-btn">
+             <img src="../img/main/인간.png" alt="마이페이지">
+           </button>
+
+           <button class="icon-btn">
+             <img src="../img/main/장바구니.png" alt="장바구니">
+           </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom-bar"></div>
+  </header>
+
+  <main class="product-detail">
+    <div class="detail-container">
+        <section class="image-section">
+            <div class="main-image">
+                <img src="../img/detail/메시50.PNG" alt="메시">
+            </div>
+            <div class="thumbnail-group">
+              <div class="thumb"><img src="../img/detail/메시 디텔.jpg" alt="디텔"></div>
+              <div class="thumb"><img src="../img/detail/메시 미테.jpg" alt="미테"></div>
+              <div class="thumb"><img src="../img/detail/메시 우에.jpg" alt="우에"></div>
+              <div class="thumb"><img src="../img/detail/메시 뒤에.jpg" alt="뒤에"></div>
+            </div>
+        </section>
+
+        <section class="info-section">
+          <div class="product-header">
+            <span class="brand">아디다스</span>
+            <h1 class="product-title">아디다스 F50 메시 리그 2G/3G AG(JQ0940)</h1>
+            <div class="price">109,000원</div>
+          </div>
+
+          <div class="product-meta">
+            <div class="meta-item">
+              <span class="label">판매가</span>
+              <span class="value">109,000원</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">배송비</span>
+              <span class="value">3,000원 (50,000원 이상 구매 시 무료 배송)</span>
+            </div>
+            <div class="meta-item">
+              <span class="label">포인트</span>
+              <span class="value">1090원 적립 (로그인 시 적립 가능)</span>
+            </div>
+          </div>
+
+          <div class="divider-line"></div>
+
+          <div class="option-area">
+            <div class="option-row">
+              <span class="label">색  상</span>
+              <span class="value">FTWR WHITE / LUCID PINK / FLASH AQUA</span>
+            </div>
+            <div class="option-row size-row">
+              <span class="label">사이즈</span>
+              <div class="size-selector">
+                <button type="button" class="size-btn">230</button>
+                <button type="button" class="size-btn">235</button>
+                <button type="button" class="size-btn">240</button>
+                <button type="button" class="size-btn">245</button>
+                <button type="button" class="size-btn">250</button>
+                <button type="button" class="size-btn">255</button>
+                <button type="button" class="size-btn active">260</button>
+                <button type="button" class="size-btn">265</button>
+                <button type="button" class="size-btn">270</button>
+                <button type="button" class="size-btn">275</button>
+                <button type="button" class="size-btn">280</button>
+                <button type="button" class="size-btn">285</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider-line"></div>
+
+          <div class="purchase-area">
+            <div class="total-price-row">
+              <span class="total-label">총 금액</span>
+              <span class="total-value">0 원</span>
+            </div>
+
+            <div class="button-group">
+              <button type="button" class="wish-btn">
+                <span class="heart-icon">♡</span>
+              </button>
+              <button type="button" class="cart-btn">장바구니</button>
+              <button type="button" class="buy-btn">구매하기</button>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <section class="product-tabs">
+      <div class="tabs-container">
+        <nav class="tab-button-group">
+          <div class="tab-item">상품 상세 정보</div>
+          <div class="tab-item">상품 후기 (3)</div>
+          <div class="tab-item">상품 문의 (3)</div>
+          <div class="tab-item">배송 / 반품 / 교환 안내</div>
+        </nav>
+        <div class="tab-underline"></div>
+      </div>
+    </section>
+
+    <section class="detail-content-area">
+      <div class="brand-intro-image">
+        <img src="../img/detail/아디스.jpg" alt="브랜드">
+      </div>
+
+      <div class="detail-image-list">
+        <div class="detail-image-item left-padded">
+          <img src="../img/detail/메시50.PNG" alt="메시">
+        </div>
+
+        <div class="detail-image-item centered">
+          <img src="../img/detail/메시디테일3.png" alt="상세">
+        </div>
+
+        <div class="detail-image centered">
+          <img src="../img/detail/메시디테일1.png" alt="상세2">
+        </div>
+
+        <div class="detail-image left-padded">
+          <img src="../img/detail/메시디테일2.png" alt="상세3">
+        </div>
+      </div>
+    </section>
+
+    <section class="review-section">
+      <div class="review-summary">
+        <div class="review-title-group">
+          <h2 class="review-label">상품후기</h2>
+          <div class="review-stars">★★★★★<span class="rating-text">5/5</span></div>
+        </div>
+      </div>
+
+      <div class="photo-review-area">
+        <h3 class="photo-title">포토 모아보기</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="../img/detail/아디 리뷰4.jpg" alt="리뷰">
+          </div>
+          <div class="photo-item">
+            <img src="../img/detail/아디 리뷰.jpg" alt="리뷰2">
+          </div>
+          <div class="photo-item">
+            <img src="../img/detail/아디 리뷰2.jpg" alt="리뷰3">
+          </div>
+        </div> 
+      </div>
+
+      <div class="review-sort-tabs">
+        <button class="sort-btn">베스트순</button>
+        <button class="sort-btn">등록일순</button>
+        <button class="sort-btn">평점높은순</button>
+        <button class="sort-btn">평점낮은순</button>
+        <button class="sort-btn">추천순</button>
+      </div>
+
+      <div class="review-list-container">
+        <div class="review-divider-top">
+          <div class="review-items-wrapper">
+            <div class="review-row">
+              <span class="stars">★★★★★</span>
+              <span class="review-text">발에 착 감기는게 너무 좋습니다....</span>
+              <span class="purchase-info">270 구매</span>
+              <span class="user-id">jkd****</span>
+            </div>
+
+            <div class="review-row">
+              <span class="stars">★★★★★</span>
+              <span class="review-text">아들 둘이 너무 좋아해 합니다! 감사합니다!</span>
+              <span class="purchase-info">250 구매</span>
+              <span class="user-id">dp19****</span>
+            </div>
+
+          </div>
+
+          <div class="pagination">
+            <button class="page-btn doble-prev">
+              <img src="../img/detail/왼쪽두개.png" alt="이이전">
+            </button>
+
+            <button class="page-btn prev">
+              <img src="../img/detail/왼쪽하나.png" alt="이전">
+            </button>
+
+            <button class="page-num">1</button>
+            <button class="page-num">2</button>
+            <button class="page-num">3</button>
+            <button class="page-btn next">
+              <img src="../img/detail/오른쪽하나.png" alt="다음">
+            </button>
+
+            <button class="page-btn double-next">
+              <img src="../img/detail/오른쪽두개.png" alt="다다음">
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="qna-section">
+      <div class="qna-header">
+        <div class="qna-divider-top"></div>
+        <div class="qna-title-bar">
+          <h2 class="qna-label">상품문의</h2>
+          <button class="qna-reg-btn">상품문의 등록</button>
+        </div>
+      </div>
+
+      <div class="qna-list">
+        <div class="qna-item">
+          <div class="qna-info">
+            <span class="user-idd">cho5****</span>
+            <span class="qna-content">비밀 게시글입니다.</span>
+          </div>
+          <div class="qna-divider"></div>
+        </div>
+
+        <div class="qna-item">
+          <div class="qna-info">
+            <span class="user-idd">kkh****</span>
+            <span class="qna-content">비밀 게시글입니다.</span>
+          </div>
+          <div class="qna-divider"></div>
+        </div>
+
+        <div class="qna-item">
+          <div class="qna-info">
+            <span class="user-idd">pjg****</span>
+            <span class="qna-content">비밀 게시글입니다.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+            <button class="page-btn doble-prev">
+              <img src="../img/detail/왼쪽두개.png" alt="이이전">
+            </button>
+
+            <button class="page-btn prev">
+              <img src="../img/detail/왼쪽하나.png" alt="이전">
+            </button>
+
+            <button class="page-num">1</button>
+            <button class="page-num">2</button>
+            <button class="page-num">3</button>
+            <button class="page-btn next">
+              <img src="../img/detail/오른쪽하나.png" alt="다음">
+            </button>
+
+            <button class="page-btn double-next">
+              <img src="../img/detail/오른쪽두개.png" alt="다다음">
+            </button>
+          </div>
+    </section>
+
+    <section class="shipping-info-section">
+      <div class="shipping-header">
+        <h2 class="shipping-label">배송안내</h2>
+        <div class="shipping-divider-top"></div>
+      </div>
+
+      <div class="shipping-box">
+        <div class="shipping-content">
+          <p class="shipping-text">
+            -평일 오후 1시 이전 주문 건에 대해서는 당일 출고 됩니다. <br>
+            -금요일 오후 1시 이후, 공휴일 주문 시에는 돌아오는 평일에 출고 됩니다. <br>
+            -이벤트로 인한 주문량 폭주, 천재지변, 기타 사유로 출고가 늦어질 수 있습니다. <br>
+            -기본 배송료는 3,000원이며 5만원 이상 구매 시 무료배송 입니다. <br>
+            -우체국 택배로 출고되며 출고 후 평일 기준 1~5일 이내 배송 됩니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="refund-info-section">
+      <div class="refund-header">
+        <h2 class="refund-label">환불안내</h2>
+        <div class="refund-divider-top"></div>
+      </div>
+
+      <div class="refund-box">
+        <div class="refund-content">
+          <p class="refund-text">
+            -상품 청약철회 가능기간은 상품 수령일로 부터 7일 이내 입니다. <br>
+            -환불 시 결제 수단에 따라 환불 기간이 다르므로 자세한 공지사항을 참고해 주세요. <br>
+            -환불 기간이 지남에도 늦어지는 경우 고객센터로 문의 주시면 빠르게 도와드리겠습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="exchange-info-section">
+      <div class="exchange-header">
+        <h2 class="exchange-label">교환 및 반품 안내</h2>
+        <div class="exchange-divider-top"></div>
+      </div>
+
+      <div class="exchange-box">
+        <div class="exchange-content">
+          <p class="exchange-text">
+            -상품 수령일로 부터 7일 이내에 교환/반품 신청이 가능합니다. <br>
+            -단순 변심에 의한 교환, 반품은 고객께서 왕봅 배송비 6,000원을 부담하셔야
+            합니다. (제품의 하자, 배송오류는 제외) <br>
+            -교환/반품 시 싸커누리에서 회수 접수 해드리며 다른 택배사 이용 시 추가금이
+            나올 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="as-info-section">
+      <div class="as-header">
+        <h2 class="as-label">A/S안내</h2>
+        <div class="as-divider-top"></div>
+      </div>
+
+      <div class="as-box">
+        <div class="as-content">
+          <p class="as-text">
+            -상품의 A/S는 각 브랜드의 정책에 따르며 A/S 신청은 1:1 문의에 남겨주세요. <br>
+            -FG(천연잔디 전용) 축구화는 인조잔디에서 착화 시 AS 처리가 불가합니다. <br>
+            -소비자분쟁해결 기준(공정거래위원회 고시)에 따라 피해를 보상 받을 수 있습니다. <br>
+            -상품의 A/S 가능 기간은 상품 수령일로부터 1년 이내입니다.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-strip-top"></div>
+
+    <div class="footer-main">
+      <div class="footer-container">
+        <div class="footer-info-group">
+          <div class="footer-top-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <span class="bank-info">BANK INFO 국민:123456-12-123456</span>
+          </div>
+
+          <div class="footer-company-details">
+            <div class="info-row">
+              <span>회사명 : 싸커누리</span>
+              <span>대표자 : OOO</span>
+              <span>사업자 등록번호 : 126-19-28317</span>
+            </div>
+            <div class="info-row">
+              <span>대표번호 : 02-2236-3456</span>
+              <span>[평일: 09:00~18:00 / 주말, 공휴일 휴무]</span>
+              <span>E-mails : sai7980@naver.com</span>
+            </div>
+            <div class="info-row">
+              <span>통신판매업 번호 : 제2009-서울송파-0675호</span>
+              <span>주소 : 서울특별시 중랑구 면목동 192-115</span>
+            </div>
+            <p class="copyright">Copyright 2009ⓒsoccerlove Go.Ltd. All right Reserved.</p>
+          </div>
+        </div>
+        <div class="footer-logo-area">
+          <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+        </div>
+      </div>
+    </div>
+    <div class="footer-strip-bottom"></div>
+  </footer>
+
+  <script>
+   document.addEventListener('DOMContentLoaded', () => { //코드 다 읽었으면 실행하기
+  const trigger = document.getElementById('searchTrigger');//아이디 명 찾아서 저장
+  const field = document.getElementById('searchField'); //검색창 아이디 명 찾아서 저장
+
+  if (trigger && field) { //두 아이디가 다 있으면 다음으로 넘어가기
+    trigger.addEventListener('click', (e) => { //트리거 아이디(돋보기) 클릭하면 실행
+      e.stopPropagation(); //★ 클릭 이벤트가 부모요소나 문서 전체로 퍼지지 않게 막는다.★
+      field.classList.toggle('active'); //검색창에 액티브 클래스 있으면 빼고 없으면 넣는다.
+      if (field.classList.contains('active')) { //만약 액티브 클래스가 드가서 화면에 있다면
+        field.focus();// 바로 검색할수 있게 검색창 안 커서를 깜빡깜빡하게 해준다.
+      }
+    });
+
+    document.addEventListener('click', (e) => { // 어디든 클릭하면 실행하기
+      if (!field.contains(e.target) && !trigger.contains(e.target)) { //만약 클릭한데가 검색창 안에도 아니고 돋보기도 아니면
+        field.classList.remove('active'); //검색창에서 액티브 클래스를 없애서 숨긴다
+      }
+    });
+  }
+ }); 
+  </script>
+  <script>
+    const wishBtn = document.querySelector('.wish-btn'); //''안 클래스 요소 찾아서 wishBtn에 저장
+    wishBtn.addEventListener('click', function() {//위시버튼에 클릭 이벤트 추가 클릭하면 안에 함수가 추가
+     this.classList.toggle('on');//this 클래스에서 on이라는 클래스 토글
+     const heart = this.querySelector('.heart-icon');//클릭된 버튼 안에 ''클래스 요소 찾아서 하트 변수에 저장
+     if (this.classList.contains('on')) { //만약 버튼에 'on'클래스가 포함된다면
+       heart.textContent = '♥'; //하트 텍스트를 채워진 하트로 변경
+     } else { //없으면?
+       heart.textContent = '♡'; //다시 빈 하트로 변경
+     }
+    }); 
+  </script>
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub3(pro)</title>
+    <link rel="stylesheet" href="../css/sub3(pro).css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/jejugothic.css">
+</head>
+<body>
+     <header class="pr-header">
+    <div class="header-top-bar"></div>
+
+    <div class="header-content-area">
+      <div class="header-inner">
+        <div class="pr-logo">
+          <a href="../html/main.html">
+            <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+          </a>
+        </div>
+
+        <nav class="pr-nav">
+          <ul>
+            <li><a href="../html/sub1(shoe).html">축구화</a></li>
+            <li><a href="../html/sub2(clo).html">의류</a></li>
+            <li><a href="../html/sub3(pro).html">용품</a></li>
+            <li><a href="../html/sub4(cus).html">고객센터</a></li>
+          </ul>
+        </nav>
+
+        <div class="pr-utility">
+          <div class="auth-links">
+           <a href="../html/login.html">로그인</a>
+           <span class="divider">|</span>
+           <a href="../html/signup.html">회원가입</a>
+          </div>
+
+          <div class="icon-row">
+           <div class="search-unit">
+             <button class="icon-btn" id="searchTrigger">
+               <img src="../img/main/돋보기.png" alt="검색">
+             </button>
+             <input type="search" class="search-expand-input" id="searchField" placeholder="검색어를 입력하세요">
+           </div>
+
+           <button class="icon-btn">
+             <img src="../img/main/인간.png" alt="마이페이지">
+           </button>
+
+           <button class="icon-btn">
+             <img src="../img/main/장바구니.png" alt="장바구니">
+           </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom-bar"></div>
+  </header>
+  <main class="sub-page-container">
+    <section class="breadcrumb-area">
+        <h2 class="breadcrumb-text">용품 / 전체</h2>
+    </section>
+
+    <div class="product-main-content">
+        <aside class="side-filter">
+            <ul class="category-list">
+                <li>축구공</li>
+                <li>스타킹</li>
+                <li>신가드</li>
+                <li>글러브</li>
+                <li>트레이닝</li>
+                <li>가방</li>
+                <li>기타</li>
+            </ul>
+
+           <div class="filter-group">
+            <div class="filter-item-container">
+                <div class="filter-item" onclick="toggleAccordion(this)">
+                    <span>브 랜 드</span>
+                    <img src="../img/sub(pro)/화살표.png" alt="화살표" class="arrow-icon">
+                </div>
+                <div class="filter-content">
+                    <p>나이키</p>
+                    <p>아디다스</p>
+                    <p>푸마</p>
+                    <p>기타</p>
+                </div>
+            </div>
+
+            <div class="filter-item-container">
+                <div class="filter-item" onclick="toggleAccordion(this)">
+                    <span>컬 러</span>
+                    <img src="../img/sub(pro)/화살표.png" alt="화살표" class="arrow-icon">
+                </div>
+                <div class="filter-content">
+                    <p>Black</p>
+                    <p>White</p>
+                    <p>Red</p>
+                </div>
+            </div>
+
+            <div class="filter-item-container">
+                <div class="filter-item" onclick="toggleAccordion(this)">
+                    <span>가 격</span>
+                    <img src="../img/sub(pro)/화살표.png" alt="화살표" class="arrow-icon">
+                </div>
+                <div class="filter-content">
+                    <p>10,000원 ~ 50,000원</p>
+                    <p>50,000원 ~ 100,000원</p>
+                    <p>100,000원 ~ 150,000원</p>
+                    <p>150,000원 ~</p>
+                </div>
+            </div>
+           </div>
+        </aside>
+        
+        <section class="product-list-wrapper">
+            <div class="product-grid-row">
+                <article class="product-card">
+                    <div class="product-img-box arch-style">
+                        <img src="../img/sub(pro)/아디 삭스.jpg" alt="삭스">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="prod-name">아디다스 아디 23 삭스 (IB7796)</h3>
+                        <span class="prod-price">17,000원</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-img-box arch-style">
+                        <img src="../img/sub(pro)/나이키 축구공.jpg" alt="나축">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="prod-name">나이키 아카데미 축구공 VJR (IO9395628)</h3>
+                        <span class="prod-price">40,000원</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-img-box arch-style">
+                        <img src="../img/sub(pro)/아디 축구공.jpg" alt="아축">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="prod-name">아디다스 UCL 컴피티션 프로 축구공 (JX9096)</h3>
+                        <span class="prod-price">48,300원</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    <section class="product-row-secondary">
+        <div class="product-grid-row">
+            <article class="product-card">
+                <div class="product-img-box flat-style">
+                    <img src="../img/sub(pro)/울스포츠 장갑.jpg" alt="장갑">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">울스포츠 컴포트 앱솔루트그립 HN 골키퍼 글러브 (101143001)</h3>
+                    <span class="prod-price">135,000원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box flat-style">
+                    <img src="../img/sub(pro)/아디 가방.jpg" alt="아디가">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">아디다스 EP 시스템 슈즈 색 (KE5218)</h3>
+                    <span class="prod-price">15,000원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box flat-style">
+                    <img src="../img/sub(pro)/슬리브2.jpg" alt="슬리브">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">하이블 WE-STIM 퍼포먼스 카프 슬리브</h3>
+                    <span class="prod-price">47,700원</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="product-row-tertiary">
+        <div class="product-grid-row">
+            <article class="product-card">
+                <div class="product-img-box bottom-arch-style">
+                    <img src="../img/sub(pro)/울스포츠 장갑2.jpg" alt="글럽">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">울스포츠 사이버텍 앱솔루트그립 HN 골키퍼 글러브 (101137901)</h3>
+                    <spa class="prod-price">135,000원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box bottom-arch-style">
+                    <img src="../img/sub(pro)/나이키 조단.jpg" alt="손목">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">나이키 조던 점프맨 손목 밴드 (AC4094010)</h3>
+                    <spa class="prod-price">20,700원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box bottom-arch-style">
+                    <img src="../img/sub(pro)/나이키 보틀.jpg" alt="보틀">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">나이키 스테인리스 스틸 리차지 처그 그래픽 보틀 24OZ (II5218044)</h3>
+                    <spa class="prod-price">58,500원</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="product-row-quaternary">
+        <div class="product-grid-row">
+            <article class="product-card">
+                <div class="product-img-box arch-style">
+                    <img src="../img/sub(pro)/아디 크루 삭스.jpg" alt="크루">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">아디다스 크루 삭스 (JN4518)</h3>
+                    <span class="prod-price">5,800원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box arch-style">
+                    <img src="../img/sub(pro)/푸마 축구공.jpg" alt="푸공">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">푸마 오비타 6 MS 축구공 (08433514)</h3>
+                    <span class="prod-price">27,000원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box arch-style">
+                    <img src="../img/sub(pro)/아디 신가드.jpg" alt="아신">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">아디다스 티로 신가드 리그 (II5218044)</h3>
+                    <span class="prod-price">31,500원</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="product-row-quinary">
+        <div class="product-grid-row">
+            <article class="product-card">
+                <div class="product-img-box flat-style">
+                    <img src="../img/sub(pro)/아디 삭스스.jpg" alt="스스">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">아디다스 아디 23 삭스 (HT5027)</h3>
+                    <span class="prod-price">17,000원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box flat-style">
+                    <img src="../img/sub(pro)/아디 볼넷.jpg" alt="볼넷">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">아디다스 티로 리그 볼넷 (HS9751)</h3>
+                    <span class="prod-price">41,300원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box flat-style">
+                    <img src="../img/sub(pro)/아디 볼 펌프.jpg" alt="펌프">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">아디다스 듀얼 액션 펌프 (CZ9556)</h3>
+                    <span class="prod-price">23,400원</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="product-row-senary">
+        <div class="product-grid-row">
+            <article class="product-card">
+                <div class="product-img-box bottom-arch-style">
+                    <img src="../img/sub(pro)/조던펌프.png" alt="조펌">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">조던 에센셜 볼 펌프 INTL (AC4409079)</h3>
+                    <span class="prod-price">24,300원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box bottom-arch-style">
+                    <img src="../img/sub(pro)/오클리 더플.jpg" alt="더플">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">오클리 어반 룩 RC 더플 70L (FOS90104832F)</h3>
+                    <span class="prod-price">170,800원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box bottom-arch-style">
+                    <img src="../img/sub(pro)/오클리 바디.jpg" alt="오바">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">오클리 인핸스 LT 바디 백 9.0 (FOS902151262)</h3>
+                    <span class="prod-price">40,600원</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="product-row-septenary">
+        <div class="product-grid-row">
+            <article class="product-card">
+                <div class="product-img-box arch-style">
+                    <img src="../img/sub(pro)/아디 디펜더.jpg" alt="디펜">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">아디다스 트레이닝 디펜더 더플백 L (JZ0606)</h3>
+                    <span class="prod-price">53,000원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box arch-style">
+                    <img src="../img/sub(pro)/나이키 로프.jpg" alt="로프">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">나이키 펀더멘탈 웨이티드 로프 (AC4197010)</h3>
+                    <span class="prod-price">40,500원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box arch-style">
+                    <img src="../img/sub(pro)/아디 캡틴.jpg" alt="캡틴">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">아디다스 티로 L 캡틴 암 밴드 (HS9766)</h3>
+                    <span class="prod-price">18,700원</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="product-row-octonary">
+        <div class="product-grid-row">
+            <article class="product-card">
+                <div class="product-img-box bottom-arch-style">
+                    <img src="../img/sub(pro)/스타 호각.jpg" alt="호각">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">스타 폭스호각 클래식 CMG 줄포함</h3>
+                    <span class="prod-price">8,800원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box bottom-arch-style">
+                    <img src="../img/sub(pro)/밴드.jpg" alt="밴드">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">M TEX 베이지(DH) (5cm*5m)</h3>
+                    <span class="prod-price">8,000원</span>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-img-box bottom-arch-style">
+                    <img src="../img/sub(pro)/나이키 콘.jpg" alt="콘">
+                </div>
+                <div class="product-info">
+                    <h3 class="prod-name">나이키 10팩 트레이닝 콘 (AC1931709)</h3>
+                    <span class="prod-price">31,500원</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <nav class="pagination-container">
+        <a href="#" class="page-arrow first-page">
+            <img src="../img/sub(pro)/왼쪽두개.png" alt="맨첨">
+        </a>
+
+        <a href="#" class="page-arrow prev-page">
+            <img src="../img/sub(pro)/왼쪽하나.png" alt="이전">
+        </a>
+        <ul class="page-numbers">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+
+        <a href="#" class="page-arrow next-page">
+            <img src="../img/sub(pro)/오른쪽하나.png" alt="다음">
+        </a>
+
+        <a href="#" class="page-arrow last-page">
+            <img src="../img/sub(pro)/오른쪽두개.png" alt="맨끝">
+        </a>
+    </nav>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-top-line"></div>
+
+    <div class="footer-content">
+        <div class="footer-inner">
+            <div class="footer-info-group">
+                <div class="footer-nav">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <span class="bank-info">BANK INFO 국민 : 123456-12-123456</span>
+                </div>
+
+                <div class="company-details">
+                    <div class="detail-row">
+                        <span>회사명 : 싸커누리</span>
+                        <span>대표자 : OOO</span>
+                        <span>사업자 등록번호 : 126-19-28317</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>대표번호 : 02-2236-3456</span>
+                        <span>[평일:09:00~18:00 / 주말, 공휴일 휴무]</span>
+                        <span>E-mail : sai7980@naver.com</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>통신판매업 번호 : 제 2009-서울송파-0675호</span>
+                        <span>주소 : 서울특별시 중랑구 면목동 192-115</span>
+                    </div>
+                    <p class="copyright">Copyright 2009ⓒsoccerlove Go.,Ltd. All right Reserved.</p>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-line"></div>
+  </footer>
+  <script>
+   document.addEventListener('DOMContentLoaded', () => { //코드 다 읽었으면 실행하기
+  const trigger = document.getElementById('searchTrigger');//아이디 명 찾아서 저장
+  const field = document.getElementById('searchField'); //검색창 아이디 명 찾아서 저장
+
+  if (trigger && field) { //두 아이디가 다 있으면 다음으로 넘어가기
+    trigger.addEventListener('click', (e) => { //트리거 아이디(돋보기) 클릭하면 실행
+      e.stopPropagation(); //★ 클릭 이벤트가 부모요소나 문서 전체로 퍼지지 않게 막는다.★
+      field.classList.toggle('active'); //검색창에 액티브 클래스 있으면 빼고 없으면 넣는다.
+      if (field.classList.contains('active')) { //만약 액티브 클래스가 드가서 화면에 있다면
+        field.focus();// 바로 검색할수 있게 검색창 안 커서를 깜빡깜빡하게 해준다.
+      }
+    });
+
+    document.addEventListener('click', (e) => { // 어디든 클릭하면 실행하기
+      if (!field.contains(e.target) && !trigger.contains(e.target)) { //만약 클릭한데가 검색창 안에도 아니고 돋보기도 아니면
+        field.classList.remove('active'); //검색창에서 액티브 클래스를 없애서 숨긴다
+      }
+    });
+  }
+ }); 
+  </script>
+  <script>
+    function toggleAccordion(element) {
+        element.classList.toggle('active');
+        const allItems = document.querySelectorAll('.filter-item');
+        allItems.forEach(item => {
+            if (item !== element) {
+                item.classList.remove('active');
+            }
+        });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sub4(customer)페이지</title>
+  <link rel="stylesheet" href="../css/sub4(cus).css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/jejugothic.css">
+</head>
+<body>
+  <header class="cus-header">
+    <div class="header-top-bar"></div>
+
+    <div class="header-content-area">
+      <div class="header-inner">
+        <div class="cus-logo">
+          <a href="../html/main.html">
+            <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+          </a>
+        </div>
+
+        <nav class="cus-nav">
+          <ul>
+            <li><a href="../html/sub1(shoe).html">축구화</a></li>
+            <li><a href="#">의류</a></li>
+            <li><a href="#">용품</a></li>
+            <li><a href="../html/sub4(cus).html">고객센터</a></li>
+          </ul>
+        </nav>
+
+        <div class="cus-utility">
+          <div class="auth-links">
+           <a href="../html/login.html">로그인</a>
+           <span class="divider">|</span>
+           <a href="../html/signup.html">회원가입</a>
+          </div>
+
+          <div class="icon-row">
+           <div class="search-unit">
+             <button class="icon-btn" id="searchTrigger">
+               <img src="../img/main/돋보기.png" alt="검색">
+             </button>
+             <input type="search" class="search-expand-input" id="searchField" placeholder="검색어를 입력하세요">
+           </div>
+
+           <button class="icon-btn">
+             <img src="../img/main/인간.png" alt="마이페이지">
+           </button>
+
+           <button class="icon-btn">
+             <img src="../img/main/장바구니.png" alt="장바구니">
+           </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom-bar"></div>
+  </header>
+
+  <main id="main-content">
+    <header class="cs-header-area">
+      <div class="cs-title-wrap">
+        <h1 class="cs-main-title">고객센터</h1>
+      </div>
+
+      <aside class="feedback-badge" id="feedbackBadge">
+        <div class="feedback-trigger" onclick="toggleFeedback()" role="button">
+          <div class="feedback-bg"></div>
+          <div class="feedback-text-container">
+            <span class="feedback-label">FEED BACK</span>
+          </div>
+        </div>
+
+        <section class="feedback-panel">
+          <h3>의견 보내기</h3>
+          <textarea placeholder="싸커누리에 전하고 싶은 의견을 남겨주세요."></textarea>
+          <div class="btn-group">
+            <button type="button" onclick="submitFeedback()">보내기</button>
+            <button type="button" class="close-btn" onclick="toggleFeedback()">닫기</button>
+          </div>
+        </section>
+      </aside>
+    </header>
+    <section class="cs-board-section"></section>
+
+    <section class="faq-category-section">
+      <div class="faq-inner-container">
+        <header class="fap-header">
+          <h2 class="fap-small-title">FAQ</h2>
+        </header>
+
+        <nav class="faq-nav">
+          <ul class="category-list">
+            <li class="category-item">
+              <button type="button" class="category-btn">
+                <img src="../img/sub(cus)/택배차.png" alt="택배" class="category-icon">
+                <span class="category-name">배송문의</span>
+              </button>
+            </li>
+
+            <li class="category-item wide">
+              <button type="button" class="category-btn">
+                <img src="../img/sub(cus)/반품차.png" alt="반품" class="category-icon">
+                <span class="category-name">반품 / 환불문의</span>
+              </button>
+            </li>
+
+            <li class="category-item">
+              <button type="button" class="category-btn">
+                <img src="../img/sub(cus)/배송상자.png" alt="상품" class="category-icon">
+                <span class="category-name">상품문의</span>
+              </button>
+            </li>
+
+            <li class="category-item">
+              <button type="button" class="category-btn">
+                <img src="../img/sub(cus)/상담사.png" alt="상담" class="category-icon">
+                <span class="category-name">상담문의</span>
+              </button>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+    </section>
+
+    <section class="cs-login-section">
+      <div class="login-banner-container">
+        <div class="login-info-text">
+          <h3 class="info-title">무엇을 도와 드릴까요?</h3>
+          <p class="info-desc">
+            로그인 후 최근 주문한 내역을 확인하거나 교환 또는 반품을 신청하세요.
+          </p>
+        </div>
+
+        <div class="login-action">
+          <button type="button" class="login-btn-3d">
+            <span class="btn-bg-shadow"></span>
+            <a href="../html/login.html" class="btn-top">로그인</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-list-section">
+      <div class="faq-list-container">
+        <div class="faq-card">
+          <div class="card-content">
+            <h3 class="card-title">주 문</h3>
+            <ul class="question-list">
+              <li><button type="button">Q. 주문한 상품을 취소 하고 싶은데 어떻게 하나요?</button></li>
+              <li><button type="button">Q. 주문한 내역은 어떻게 확인하나요?</button></li>
+              <li><button type="button">Q. 제 주문이 조회되지 않아요</button></li>
+              <li><button type="button">Q. 방금 받은 상품에 하자가 있으면 어떻게 하나요?</button></li>
+              <li><button type="button">Q. 주문한 상품의 색상 혹은 사이즈를 변경하고 싶어요</button></li>
+              <li><button type="button">Q. 주문을 완료하였는데 배송지를 변경하고 싶어요</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="card-content">
+            <h3 class="card-title">결 제</h3>
+            <ul class="question-list">
+              <li><button type="button">Q. 결제 방법에는 어떤 것이 있나요?</button></li>
+              <li><button type="button">Q. 주문 후 결제 방법 변경 및 할부 변경 하고 싶어요</button></li>
+              <li><button type="button">Q. 신용카드로 결제한 경우 세금 계산서를 받을 수 있나요?</button></li>
+              <li><button type="button">Q. 가상 계좌로 결제 할 수 있는 방법이 있나요?</button></li>
+              <li><button type="button">Q. 현금 영수증, 세금 계산서 신청은 어떻게 하나요?</button></li>
+              <li><button type="button">Q. 결제 시 오류로 인해서 결제가 안돼요</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-list-section bottom">
+      <div class="faq-list-container">
+        <div class="faq-card tall">
+          <div class="card-content">
+            <h3 class="card-title">반품 / 환불</h3>
+            <ul class="question-list">
+              <li><button type="button">Q. 상품을 받았는데 불량 같아요 어떻게 하나요?</button></li>
+              <li><button type="button">Q. 반품 신청 및 환불 절차는 어떻게 하나요?</button></li>
+              <li><button type="button">Q. 반품이 불가능한 경우도 있나요?</button></li>
+              <li><button type="button">Q. 반품은 어느 택배사로 보내나요?</button></li>
+              <li><button type="button">Q. 제품을 교환할 수 있나요?</button></li>
+              <li><button type="button">Q. 2개 이상의 제품 반품 시 제품을 각각 발송 해야 하나요?</button></li>
+              <li><button type="button">Q. 상품을 보냈는데 언제 환불 되나요?</button></li>
+              <li><button type="button">Q. 반품 / 환불 비용은 얼마인가요?</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-card tall">
+          <div class="card-content">
+            <h3 class="card-title">배 송</h3>
+            <ul class="question-list">
+              <li><button type="button">Q. 선물 포장 및 쇼핑백 동봉 되나요?</button></li>
+              <li><button type="button">Q. 주문한 상품이 아닌 다른 상품이 배송 되었어요</button></li>
+              <li><button type="button">Q. 상품 배송 기간은 얼마나 걸리나요?</button></li>
+              <li><button type="button">Q. 퀵으로도 제품을 받을 수 있나요?</button></li>
+              <li><button type="button">Q. 배송 사고는 어떻게 처리 해야 하나요?</button></li>
+              <li><button type="button">Q. 배송 조회는 어떻게 하나요?</button></li>
+              <li><button type="button">Q. 제품은 언제 발송 되나요?</button></li>
+              <li><button type="button">Q. 주문한 상품 일부만 도착했어요</button></li>
+              <li><button type="button">Q. 배송완료라고 나오는데 아직 상품을 받지 못했어요</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-list-section promo-product">
+      <div class="faq-list-container">
+        <div class="faq-card medium">
+          <div class="card-content">
+            <h3 class="card-title">프로모션 / 쿠폰</h3>
+            <ul class="question-list">
+              <li><button type="button">Q. 회원가입 시 웰컴 쿠폰 및 생일 쿠폰을 못받았어요</button></li>
+              <li><button type="button">Q. 프로모션 코드는 어떻게 입력하나요?</button></li>
+              <li><button type="button">Q. 상품평 작성 및 수정, 삭제가 가능한가요?</button></li>
+              <li><button type="button">Q. 쿠폰이 있는데 적용이 안돼요</button></li>
+              <li><button type="button">Q. 쿠폰은 어떻게 사용 하나요?</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-card medium">
+          <div class="card-content">
+            <h3 class="card-title">상 품</h3>
+            <ul class="question-list">
+              <li><button type="button">Q. 제품별 세탁법은 어떻게 봐야하나요?</button></li>
+              <li><button type="button">Q. 상품 이미지가 달라요</button></li>
+              <li><button type="button">Q. 해당 상품이 정품인지 아닌지 확인하고 싶어요</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-list-section membership-as">
+      <div class="faq-list-container">
+        <div class="faq-card short">
+          <div class="card-content">
+            <h3 class="card-title">멤버십</h3>
+            <ul class="question-list">
+              <li><button type="button">Q. 회원 가입 시 실명 인증이 되지 않아요</button></li>
+              <li><button type="button">Q. 상품 주문 시 회원가입을 꼭 해야 하나요?</button></li>
+              <li><button type="button">Q. 개명을 했는데 수정은 어떻게 해야 하나요?</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-card short">
+          <div class="card-content">
+            <h3 class="card-title">A / S 수선문의</h3>
+            <ul class="question-list as-list">
+              <li><button type="button">Q. 싸커누리 공식 온라인 사이트 A/S 정책 안내</button></li>
+              <li><button type="button">Q. 사이즈 줄임, 늘임 수선을 하고 싶어요</button></li>
+              <li><button type="button">Q. 세탁 후 제품이 변형 되었어요</button></li>
+              <li><button type="button">Q. 제품이 이염 / 변색 된 경우 어떻게 해야 하나요?</button></li>
+              <li><button type="button">Q. A/S 요청은 어떻게 하나요?</button></li>
+              <li><button type="button">Q. A/S 하면 보통 얼마나 걸리나요?</button></li>
+              <li><button type="button">Q. A/S 진행 시 비용은 어떻게 되나요?</button></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="faq-contact-section">
+      <div class="contact-banner-container">
+        <div class="contact-inner-content">
+          <div class="contact-info">
+            <h3 class="contact-title">더 궁금한것이 있으신가요?</h3>
+            <p class="contact-hours">평일 09 ~ 18시 점심시간 12 ~ 13시 주말, 공휴일 휴무</p>
+          </div>
+
+          <div class="contact-action">
+            <button type="button" class="btn-3d-contact">
+              <div class="btn-shadow"></div>
+              <div class="btn-front">문의하기</div>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="membership-banner">
+      <div class="overlay">
+        <div class="content-wrapper">
+          <p class="promo-text">지금 회원가입을 하고 웰컴 쿠폰과 생일 쿠폰 혜택을 받으세요.</p>
+
+          <div class="coupon-container">
+            <img src="../img/sub(cus)/웰컴쿠폰.png" alt="웰컴">
+            <img src="../img/sub(cus)/생일쿠폰.png" alt="생일">
+          </div>
+
+          <a href="../html/signup.html" class="signup-button">회원가입 하기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-container">
+    <div class="footer-top-bar">
+
+      <div class="footer-content-wrapper">
+        <div class="footer-main-layout">
+
+          <div class="footer-info-section">
+            <nav class="footer-nav">
+              <a href="#">이용약관</a>
+              <a href="#">개인정보처리방침</a>
+              <span class="bank-info">BANK INFO 국민:123456-12-123456</span>
+            </nav>
+
+            <div class="company-details">
+              <div class="detail-row">
+                <span>회사명 : 싸커누리</span>
+                <span>대표자 : OOO</span>
+                <span>사업자 등록번호 : 126-19-28317</span>
+              </div>
+              <div class="detail-row">
+                <span>대표번호 : 02-2236-3456</span>
+                <span>[평일: 09:00~18:00 / 주말, 공휴일 휴무]</span>
+                <span>E-mail : sai7980@naver.com</span>
+              </div>
+              <div class="detail-row">
+                <span>통신판매업 번호 : 제 2009-서울송파-0675호</span>
+                <span>주소 : 서울특별시 중랑구 면목동 192-115</span>
+              </div>
+              <p class="copyright">Copyright 2009ⓒsoccerlove Go.,Ltd. All right Reserved.</p>
+            </div>
+          </div>
+
+          <div class="footer-logo-section">
+            <img src="../img/main/싸커누리 로고 최종.png" alt="로고">
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-bar"></div>
+    </div>
+  </footer>
+  <script>
+   document.addEventListener('DOMContentLoaded', () => { //코드 다 읽었으면 실행하기
+  const trigger = document.getElementById('searchTrigger');//아이디 명 찾아서 저장
+  const field = document.getElementById('searchField'); //검색창 아이디 명 찾아서 저장
+
+  if (trigger && field) { //두 아이디가 다 있으면 다음으로 넘어가기
+    trigger.addEventListener('click', (e) => { //트리거 아이디(돋보기) 클릭하면 실행
+      e.stopPropagation(); //★ 클릭 이벤트가 부모요소나 문서 전체로 퍼지지 않게 막는다.★
+      field.classList.toggle('active'); //검색창에 액티브 클래스 있으면 빼고 없으면 넣는다.
+      if (field.classList.contains('active')) { //만약 액티브 클래스가 드가서 화면에 있다면
+        field.focus();// 바로 검색할수 있게 검색창 안 커서를 깜빡깜빡하게 해준다.
+      }
+    });
+
+    document.addEventListener('click', (e) => { // 어디든 클릭하면 실행하기
+      if (!field.contains(e.target) && !trigger.contains(e.target)) { //만약 클릭한데가 검색창 안에도 아니고 돋보기도 아니면
+        field.classList.remove('active'); //검색창에서 액티브 클래스를 없애서 숨긴다
+      }
+    });
+  }
+ }); 
+  </script>
+
+  <script>
+    function toggleFeedback() { //피드백 섹션 토글 기능 
+     const badge = document.getElementById('feedbackBadge'); //''인 아이디 요소 찾아서 badge 변수에 저장
+     const trigger = document.querySelector('.feedback-trigger');// 클릭 버튼인 ''을 찾아서 변수에 저장
+     const isActive = badge.classList.toggle('active'); //badge에 active가 있으면 제거하고 없으면 추가하기
+    }
+    function submitFeedback() { //피드백 제출하깅
+     const textarea = document.querySelector('.feedback-panel textarea'); //''안에 있는 textarea 찾기
+     if (textarea.value.trim() === "") {//만약 사람이 공백만 두거나 아무것도 안쓰면? trim()은 앞뒤 공백 제거 기능
+      alert("의견을 입력해주세요!"); //알림창
+      return; //알림창 띄우고 즉시 종료하기 
+    }
+    console.log("제출된 의견:", textarea.value); //사용자가 슨 내용을 개발자 도구 콘솔에 기록
+    alert("소중한 의견 감사합니다!"); //정상적으로 제출되면 알림
+
+    textarea.value = ""; //입력창에 남아있는 글자를 지운다.
+    toggleFeedback(); //제출했으니 피드백 패널 다시 닫기
+    }
+  document.addEventListener('click', (e) => { //어디든 클릭하면 여기 안에 있는 코드 실행하기 (e)는 클릭 대상에 정보를 담는다
+    const badge = document.getElementById('feedbackBadge'); //''이 아이디값을 찾아서 badge에 가기
+    if (badge.classList.contains('active') && !badge.contains(e.target)) { //현재 패널이 열려있는지 확인, 클릭된게 영역내부인지 아닌지 확인
+      toggleFeedback(); //패널이 열려있는데 밖에 클릭하면 패널을 닫기
+    }
+  });
+  </script>
+</body>
+</html>

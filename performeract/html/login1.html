@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="../css/login1.css">
+</head>
+<body>
+  <header class="main-header">
+  <div class="header-container">
+    <h1 class="logo">
+      <a href="../html/main1.html"><img src="../img/main/PERFORMERACT1.png" alt="로고"></a>
+    </h1>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../html/sub01.html">공연안내</a></li>
+        <li><a href="../html/sub02.html">예매안내</a></li>
+        <li><a href="#">대관안내</a></li>
+        <li><a href="#">커뮤니티</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-utils">
+      <div class="auth-links">
+        <a href="../html/login1.html">로그인</a>
+        <span class="divider"></span>
+        <a href="../html/signup1.html">회원가입</a>
+      </div>
+      
+      <div class="search-bar">
+        <input type="search" placeholder="검색어를 입력하세요.">
+        <button type="button" class="search-btn">
+          <span class="vector-icon">
+            <img src="../img/main/돋보기.png" alt="돋보기">
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="member-service-section">
+  <div class="member-header">
+    <h1 class="service-title">M E M B E R  S E R V I C E</h1>
+  </div>
+
+  <div class="login-card">
+    <div class="lock-icon-box">
+      <img src="../img/sub/lock.png" alt="lock" class="lock-icon">
+    </div>
+
+    <div class="login-subtitle-box">
+      <h2 class="login-text">회원 로그인</h2>
+    </div>
+
+    <form class="login-form">
+      <div class="input-field">
+        <input type="text" placeholder="아이디를 입력하세요" required>
+      </div>
+
+      <div class="input-field">
+        <input type="password" placeholder="비밀번호를 입력하세요" required>
+      </div>
+
+      <button type="submit" class="login-submit-btn">로 그 인</button>
+    </form>
+
+    <div class="login-links">
+      <a href="../html/signup1.html" class="link-item">회원가입</a>
+      <a href="#" class="link-item find-id-link">아이디 찾기</a>
+      <a href="#" class="link-item find-pw-link">비밀번호 찾기</a>
+    </div>
+    
+  </div>
+</section>
+<div id="findInfoModal" class="modal-overlay">
+  <div class="modal-content find-card">
+    <button class="modal-close">&times;</button>
+
+    <div class="find-header">
+      <h2 id="modalTitle" class="find-title">아이디 찾기</h2>
+      <p class="find-desc">회원가입 시 등록한 정보를 입력해주세요.</p>
+    </div>
+
+    <div class="find-form">
+      <div class="find-input-field">
+        <input type="text" id="findName" placeholder="이름을 입력하세요">
+      </div>
+      <div class="find-input-field" id="emailField">
+        <input type="email" id="findEmail" placeholder="이메일을 입력하세요">
+      </div>
+      <div class="find-input-field" id="idField" style="display: none;">
+        <input type="text" id="findID" placeholder="아이디를 입력하세요">
+      </div>
+
+      <button type="button" class="find-submit-btn">확 인</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
