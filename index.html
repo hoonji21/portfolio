@@ -1,198 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>표지페이지</title>
+  <title>표지 사이트</title>
   <link rel="stylesheet" href="./index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
- <section class="section-cover">
-  <div class="frame-top">
-    <div class="frame-title-nav">
-      <div class="frame-main-title">
-        <h1 class="main-title">UI / UX Web Publisher Portfolio</h1>
+  <section class="intro-section" id="home">
+    <header class="intro-header">
+      <div class="logo-box">
+        <a href="./index.html" class="logo-text">KIMJIHOON</a>
       </div>
 
-      <div class="frame-user-info">
-        <div class="frame-name">
-          <h2 class="user-name">KIM JI HOON</h2>
-        </div>
-        <nav class="frame-nav">
-          <a href="#profile">Profile</a>
-          <a href="#brand-project">Portfolio. 1</a>
-          <a href="#renewal-project">Portfolio. 2</a>
-          <a href="#closing">Closing</a>
-        </nav>
-      </div>
-    </div>
-  </div>
+      <button class="hamburger" id="hamburgerBtn" aria-label="메뉴열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <div class="frame-bottom" id="profile">
-    <div class="frame-intro">
-      <div class="frame-profile-img">
-        <div class="img-circle">
-          <img src="./int-img/나나나.png" alt="나">
-        </div>
-      </div>
-      <div class="frame-slogan">
-        <h3 class="slogan-title">[사용자의 관점으로 흐름을 설계하다.]</h3>
-        <p class="slogan-desc">사용자 관점으로 사용자 경험을 풀어내는 <br> 웹 퍼블리셔 김지훈입니다.</p>
-      </div>
+      <nav class="intro-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#closing">Closing</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <h1 class="main-name">KIM <br>JI <br>HOON</h1>
+      <p class="main-subtitle">Web Publisher <br>Portfolio</p>
+    </main>
+  </section>
+
+  <section class="profile-section" id="profile">
+    <div class="profile-header">
+      <h2 class="profile-title">Profile</h2>
     </div>
 
-    <div class="red-line"></div>
-
-    <div class="frame-details">
-      <div class="detail-box contact-info">
-        Birth : 1998.02.21 <br> Call : 010-9127-6912 <br>
-        E.mail : kjh980221@naver.com <br> IG : @miraesobrighthoonji
-      </div>
-
-      <div class="detail-box stack-info">
-        <div class="stack-group">
-          <span class="label">TOOL</span>
-          <div class="icon-row">
-            <img src="./int-img/figma.png" alt="fig">
-            <img src="./int-img/ppt.png" alt="ppt">
-            <img src="./int-img/vs2 1.png" alt="vs">
-            <img src="./int-img/cacad 1.png" alt="cad">
-          </div>
+    <div class="profile-container">
+      <div class="profile-main">
+        <div class="profile-img">
+          <img src="./int-img/나나나.png" alt="프로필사진">
         </div>
-        <div class="stack-group">
-          <span class="label">AI</span>
-          <div class="icon-row">
-            <img src="./int-img/gemi 1.png" alt="gem">
-            <img src="./int-img/gp 1.png" alt="gp">
-            <img src="./int-img/cl 1.png" alt="cl">
+
+        <div class="profile-info">
+          <h3 class="slogan-main">[사용자의 관점으로 <span class="text-point">흐름</span>을 설계하다.]</h3>
+          <p class="slogan-sub">다각도의 관점으로 <span class="text-point">관찰</span>하는 퍼블리셔 김지훈입니다.</p>
+
+          <div class="why-box">
+            <span class="why-label">WHY?</span>
+            <p class="why-desc">
+              왜?라는 질문을 항상 합니다. 사이트 페이지 구성 및 기능에는 유저의 관점이 최우선 되어야 한다고 생각하기에 사용자의 편의성을 찾기위해 묻습니다.
+            </p>
           </div>
+
+          <p class="intro-detail">
+            맡은일을 부여 받으면 새로운 일에 대한 설레는 마음으로 책임감을 가지고 임합니다. 디자인, 개발뿐만이 아닌 기획과 마케팅
+            업무에도 열정으로 서비스 제공에 대한 다양한 관점의 시야를 키우겠습니다. <br><br>
+            HTML, CSS, Figma, Javascript등 다양한 툴과 함께 AI를 접목시켜 웹사이트의 레이아웃과 디자인을 구성하고,
+            웹 표준과 웹 접근성을 준수하여 사용자 사고 중심의 사이트를 구현할 수 있도록 하겠습니다.
+          </p>
         </div>
       </div>
 
-      <div class="detail-box edu-info">
-        <span class="label">Education</span>
-        <p class="edu-text">
-          2013 ~ 2016 성서고등학교 졸업 <br>
-          2016 ~ 2024 계명대학교 러시아어문학과 졸업 <br>
-          2025 ~ 2026 911직업능력교육원 <br>생성형 AI와 피그마 실무를 활용한 UI/UX 웹퍼블리셔 양성과정 수료 
+      <div class="profile-footer">
+        <div class="line-divider"></div>
+
+        <div class="footer-grid">
+          <div class="footer-item contact">
+            <p>Birth : 1998.02.21</p>
+            <p>Call : 010-9127-6912</p>
+            <p>E.mail : kjh980221@naver.com</p>
+            <p>IG : @miraesobrighthoonji</p>
+          </div>
+
+          <div class="footer-item skills">
+            <div class="skill-sub">
+              <span class="label">TOOL</span>
+              <div class="icons">
+                <img src="./int-img/figma.png" alt="figma">
+                <img src="./int-img/ppt.png" alt="ppt">
+                <img src="./int-img/vs2 1.png" alt="vs">
+                <img src="./int-img/cacad 1.png" alt="cad">
+              </div>
+            </div>
+            <div class="skill-sub">
+              <span class="label">AI</span>
+              <div class="icons">
+                <img src="./int-img/gemi 1.png" alt="gemi">
+                <img src="./int-img/gp 1.png" alt="gpt">
+                <img src="./int-img/cl 1.png" alt="cl">
+              </div>
+            </div>
+          </div>
+          <div class="footer-item education">
+            <span class="label">Education</span>
+            <div class="edu-text">
+              <p>2013 ~ 2016 성서고등학교 졸업</p>
+              <p>2016 ~ 2024 계명대학교 러시아어문학과 졸업</p>
+              <p>2025 ~ 2026 911직업능력교육원 <br>생성형 AI와 피그마 실무를 활용한 UI/UX 웹퍼블리셔 양성 과정 수료</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line-divider"></div>
+  </section>
+
+  <section class="portfolio-section" id="portfolio">
+    <div class="portfolio-header">
+      <h2 class="portfolio-title">Personal Project</h2>
+    </div>
+
+    <div class="project-container">
+      <div class="project-image">
+        <img src="./int-img/뮤지칼.jpg" alt="뮤지컬">
+      </div>
+
+      <div class="project-info">
+        <div class="info-top">
+          <div class="project-titles">
+            <h3 class="project-main-name">PERFORMER ACT</h3>
+            <p class="project-slogan">"365일, 당신의 막이 오르는 순간"</p>
+            <p class="project-desc-short">-한 공간에서 예술작품을 보고 느낄 수 있는 사이트-</p>
+          </div>
+        </div>
+
+        <div class="info-bottom">
+          <p class="project-detail-text">
+            연극, 뮤지컬, 연주회, 전시회 등 한 공간에서 예약하고 즐길 수 있는 사이트를 제작했습니다.
+            예술가들이 마음껏 사용하고 작품을 표현 할 수 있는 공간도 포함했습니다.
+          </p>
+
+          <div class="button-group">
+            <a href="./김지훈퍼포머액트.pdf" class="btn btn-plan" target="_blank">기획서</a>
+            <a href="./performeract/html/main1.html" class="btn btn-site" target="_blank">홈페이지</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="renewal-page-wrap">
+    <div class="renewal-main-header">
+      <h2 class="renewal-main-title">Renewal Project</h2>
+    </div>
+
+    <div class="renewal-content-body">
+      <div class="renewal-text-area">
+        <div class="renewal-title-group">
+          <h3 class="renewal-prj-name">SOCCER NURI</h3>
+          <p class="renewal-prj-subtext">-다양한 축구용품과 스포츠 의류를 만날 수 있는 사이트-</p>
+        </div>
+
+        <div class="renewal-description-group">
+          <p class="renewal-detail-desc">
+            스포츠의 관심도가 높아지는 시대에 발 맞춰 모든 사람들이 이용할 수 있는 사이트를 리뉴얼 했습니다.
+          </p>
+          <p class="renewal-spec-info">구조 : 반응형 웹 사이트</p>
+        </div>
+
+        <div class="renewal-btn-row">
+          <a href="./김지훈싸커누리.pdf" class="btn btn-dark" target="_blank">기획서</a>
+          <a href="./soccernuri/html/main.html" class="btn btn-light" target="_blank">홈페이지</a>
+        </div>
+
+      </div>
+      <div class="renewal-img-area">
+        <img src="./int-img/soc.png" alt="soc">
+      </div>
+    </div>
+  </section>
+
+  <section class="tw-section">
+    <div class="tw-header">
+      <h2 class="tw-title">TEAM WORKS</h2>
+      <p class="tw-subtitle">UI/UX 팀 과제 분석 프로젝트</p>
+    </div>
+  
+    <div class="tw-grid">
+     <a href="./멜론뮤직.pdf" class="tw-card-link" style="text-decoration: none; color: inherit;" target="_blank"> 
+      <div class="tw-card">
+        <div class="tw-img-area melon">
+          <div class="tw-badge">
+            <span class="tw-tag tw-tag-blue">팀 과제</span>
+            <span class="tw-tag tw-tag-gray">UI/UX 분석</span>
+            <span class="tw-tag tw-tag-gray">뮤직 서비스</span>
+          </div>
+          <img src="./int-img/멜론.jpg" alt="멜론뮤직">
+        </div>
+        <div class="tw-body">
+          <div class="tw-line"></div>
+          <div class="tw-row">
+            <span class="tw-card-title">멜론 뮤직<br>서비스 분석</span>
+            <div class="tw-btn">기획서↗</div>
+          </div>
+          <div class="tw-line-bottom"></div>
+        </div>
+      </div>
+     </a>
+     <a href="./팀메가커피분석.pdf" class="tw-card-link" style="text-decoration: none; color: inherit;" target="_blank">
+      <div class="tw-card">
+        <div class="tw-img-area mega">
+          <div class="tw-badge">
+            <span class="tw-tag tw-tag-blue">팀 과제</span>
+            <span class="tw-tag tw-tag-gray">UI/UX 분석</span>
+            <span class="tw-tag tw-tag-gray">F&amp;B브랜드</span>
+          </div>
+          <img src="./int-img/메가커피.png" alt="메가커피">
+        </div>
+        <div class="tw-body">
+          <div class="tw-line"></div>
+          <div class="tw-row">
+            <span class="tw-card-title">메가커피<br>서비스 분석</span>
+            <div class="tw-btn">기획서↗</div>
+          </div>
+          <div class="tw-line-bottom"></div>
+        </div>
+      </div>
+     </a> 
+    </div>
+  </section>
+
+  <section class="closing-section" id="closing">
+    <div class="closing-wrap">
+      <div class="closing-content">
+        <h2 class="closing-title">Closing</h2>
+        <p class="closing-desc">
+          이번 프로젝트를 준비하면서, 사용자들의 경험에 많이 접근하고 관점을 바라봐야 한다는 걸 느꼈습니다. <br>
+          소중한 경험을 바탕으로 다각도의 관점을 관찰하여 사용자 서비스를 제공하는 웹 퍼블리셔가 되겠습니다.
         </p>
       </div>
     </div>
 
-    <div class="red-line"></div>
-  </div>
- </section>
+    <footer class="footer-container">
+      <div class="footer-divider"></div>
 
-  <section id="brand-project" class="section-brand">
-    <div class="brand-visual">
-      <img src="./int-img/뮤지칼.jpg" alt="mu" class="brand-main-img">
-    </div>
-
-    <div class="brand-info-card">
-      <div class="brand-header">
-        <span class="brand-label">Personal Project</span>
-        <div class="brand-titles">
-          <h2 class="brand-name">PERFORMER ACT</h2>
-          <p class="brand-slogan">"365일, 당신의 막이 오르는 순간"</p>
-          <p class="brand-summary">-한 공간에서 예술작품을 보고 느낄수 있는 사이트-</p>
-        </div>
-      </div>
-
-      <div class="brand-body">
-        <div class="brand-description">
-          <p class="desc-text">
-            연극, 뮤지컬, 연주회, 전시회 등 한 공간에서 예약하고 즐길 수 있는 사이트를 제작했습니다. <br>
-            예술가들이 마음껏 사용하고 작품을 표현 할 수 있는 공간도 포함했습니다.
-          </p>
-        </div>
-        <div class="brand-actions">
-          <a href="./김지훈퍼포머액트.pdf" class="btn btn-plan" target="_blank">기획서</a>
-          <a href="./performeract/html/main1.html" class="btn btn-web" target="_blank">홈페이지</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="renewal-project" class="section-renewal">
-    <div class="renewal-info-card">
-      <div class="renewal-header">
-        <span class="renewal-label">Renewal Project</span>
-        <div class="renewal-titles">
-          <h2 class="renewal-name">SOCCER NURI</h2>
-          <p class="renewal-summary">-다양한 축구용품과 스포츠 의류를 만나는 사이트-</p>
-        </div>
-      </div>
-
-      <div class="renewal-body">
-        <div class="renewal-description">
-          <p class="desc-main">스포츠의 관심도가 높아지는 시대에 발 맞춰 모든 사람들이 이용할 수 있는 사이트를 리뉴얼 했습니다.</p>
-          <div class="desc-sub">
-            <p>구조 : 반응형 웹 사이트</p>
-          </div>
+      <div class="footer-info-content">
+        <div class="footer-contact-box">
+          <p>Birth : 1998.02.21</p>
+          <p>Call : 010-9127-6912</p>
+          <p>E.mail : kjh980221@naver.com</p>
+          <p>IG : @miraesobrighthoonji</p>
         </div>
 
-        <div class="renewal-actions">
-          <a href="./김지훈싸커누리.pdf" class="btn btn-plan-blue" target="_blank">기획서</a>
-          <a href="./soccernuri/html/main.html" class="btn btn-web-gray" target="_blank">홈페이지</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-img-display">
-      <img src="./int-img/soc.png" alt="soc" class="renewal-main-img">
-    </div>
-  </section>
-
-  <section id="closing" class="section-closing">
-    <div class="closing-message-group">
-      <h2 class="closing-label">Closing</h2>
-      <p class="closing-text">
-        이번 디자인 프로젝트를 준비하면서, 사용자들의 경험에 많이 접근하고 관점을 바라봐야 한다는 걸 느꼈습니다. <br>
-        소중한 경험을 바탕으로 다각도의 관점에 몰입하여 사용자 서비스를 제공하는 웹 퍼블리셔가 되겠습니다.
-      </p>
-    </div>
-
-    <div class="closing-info-group">
-      <div class="accent-line"></div>
-      <div class="contact-row">
-        <div class="detail-box1 contact-info1">
-          Birth : 1998.02.21 <br> Call : 010-9127-6912 <br>
-          E.mail : kjh980221@naver.com <br> IG : @miraesobrighthoonji
-        </div>
-
-        <div class="detail-box1 stack-info1">
-          <div class="stack-group1">
-            <span class="label1">TOOL</span>
-            <div class="icon-row1">
-              <img src="./int-img/figma.png" alt="fig">
+        <div class="footer-tool-ai">
+          <div class="footer-tool-group">
+            <span class="footer-label">TOOL</span>
+            <div class="footer-icon-row">
+              <img src="./int-img/figma.png" alt="figma">
               <img src="./int-img/ppt.png" alt="ppt">
               <img src="./int-img/vs2 1.png" alt="vs">
               <img src="./int-img/cacad 1.png" alt="cad">
             </div>
           </div>
-          <div class="stack-group1">
-            <span class="label1">AI</span>
-            <div class="icon-row1">
-              <img src="./int-img/gemi 1.png" alt="gm">
-              <img src="./int-img/gp 1.png" alt="gp">
+
+          <div class="footer-ai-group">
+            <span class="footer-label">AI</span>
+            <div class="footer-icon-row">
+              <img src="./int-img/gemi 1.png" alt="gemi">
+              <img src="./int-img/gp 1.png" alt="gpt">
               <img src="./int-img/cl 1.png" alt="cl">
             </div>
           </div>
         </div>
 
-        <div class="detail-box1 edu-info1">
-          <span class="label1">Education</span>
-          <p class="edu-text1">
-            2013 ~ 2016 성서고등학교 졸업 <br>
-            2016 ~ 2024 계명대학교 러시아어문학과 졸업 <br>
-            2025 ~ 2026 911직업능력교육원 <br>생성형 AI와 피그마 실무를 활용한 UI/UX 웹퍼블리셔 양성과정 수료
-          </p>
+        <div class="footer-edu-box">
+          <span class="footer-label">Education</span>
+          <div class="footer-edu-text">
+            <p>2013 ~ 2016 성서고등학교 졸업</p>
+            <p>2016 ~ 2024 계명대학교 러시아어문학과 졸업</p>
+            <p>2025 ~ 2026 911직업능력교육원 <br>생성형 AI와 피그마 실무를 활용한 UI/UX 웹퍼블리셔 양성 과정 수료</p>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="footer-copyright">
+        <p>© 2026 KIMJIHOON. All Rights Reserved.</p>
+      </div>
+    </footer>
   </section>
 
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mainNav = document.getElementById('mainNav');
 
+    hamburgerBtn.addEventListener('click', () => {
+      hamburgerBtn.classList.toggle('active');
+      mainNav.classList.toggle('open');
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburgerBtn.classList.remove('active');
+        mainNav.classList.remove('open');
+      });
+    });
+  </script>
 </body>
 </html>
